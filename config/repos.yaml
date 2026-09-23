@@ -1,0 +1,61 @@
+- full_name: huggingface/transformers
+  display_name: Transformers
+  category: 模型框架
+  reason: 主流多模态模型定义与推理生态
+- full_name: pytorch/pytorch
+  display_name: PyTorch
+  category: 模型框架
+  reason: 广泛使用的深度学习框架
+- full_name: tensorflow/tensorflow
+  display_name: TensorFlow
+  category: 模型框架
+  reason: 成熟的机器学习与部署框架
+- full_name: vllm-project/vllm
+  display_name: vLLM
+  category: 推理引擎
+  reason: 高吞吐大模型推理与服务
+- full_name: ggml-org/llama.cpp
+  display_name: llama.cpp
+  category: 推理引擎
+  reason: 本地与边缘设备上的轻量模型推理
+- full_name: langchain-ai/langchain
+  display_name: LangChain
+  category: 智能体框架
+  reason: 智能体与大模型应用编排平台
+- full_name: run-llama/llama_index
+  display_name: LlamaIndex
+  category: 智能体框架
+  reason: 面向数据与文档的大模型应用框架
+- full_name: microsoft/autogen
+  display_name: AutoGen
+  category: 智能体框架
+  reason: 多智能体应用编程框架
+- full_name: huggingface/smolagents
+  display_name: smolagents
+  category: 智能体框架
+  reason: 轻量代码型智能体库
+- full_name: browser-use/browser-use
+  display_name: browser-use
+  category: 智能体框架
+  reason: 浏览器自动化智能体工具
+- full_name: open-webui/open-webui
+  display_name: Open WebUI
+  category: AI 应用
+  reason: 可自托管的通用 AI 交互界面
+- full_name: ollama/ollama
+  display_name: Ollama
+  category: AI 应用
+  reason: 本地运行开放模型的常用工具
+- full_name: langgenius/dify
+  display_name: Dify
+  category: AI 应用
+  reason: 可视化智能体工作流与 RAG 平台
+- full_name: lobehub/lobehub
+  display_name: LobeHub
+  category: AI 应用
+  reason: 智能体组织、运行与交互平台
+- full_name: Comfy-Org/ComfyUI
+  display_name: ComfyUI
+  category: AI 应用
+  reason: 节点式生成式图像工作流
+
