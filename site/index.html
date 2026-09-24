@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="每天观察 15 个代表性 AI 开源项目的公开趋势。">
+    <title>OpenScope AI｜开源项目观察站</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="nav" aria-label="主要导航">
+        <a class="brand" href="#top" aria-label="OpenScope AI 首页">
+          <span class="brand-mark" aria-hidden="true">OS</span>
+          <span>OpenScope AI</span>
+        </a>
+        <a class="source-button" href="https://github.com/" rel="noreferrer">GitHub 数据源</a>
+      </nav>
+      <div class="hero-copy" id="top">
+        <p class="eyebrow">OPEN SOURCE SIGNALS · DAILY</p>
+        <h1>看见 AI 开源生态<br><span>真正发生的变化</span></h1>
+        <p class="lede">每天追踪模型框架、推理引擎、智能体与 AI 应用。所有指标都链接回公开来源。</p>
+        <p class="notice">热度反映关注与活跃变化，不代表项目质量</p>
+      </div>
+      <div class="summary" id="summary" aria-live="polite"></div>
+    </header>
+
+    <main>
+      <section class="controls" aria-label="仓库筛选">
+        <label>
+          <span>搜索</span>
+          <input id="search-input" type="search" aria-label="搜索仓库" placeholder="项目名称、仓库或语言">
+        </label>
+        <label>
+          <span>分类</span>
+          <select id="category-filter" aria-label="按分类筛选">
+            <option value="">全部分类</option>
+          </select>
+        </label>
+      </section>
+
+      <section class="section" aria-labelledby="trend-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">TREND BOARD</p>
+            <h2 id="trend-title">趋势观察</h2>
+          </div>
+          <p id="result-count" aria-live="polite"></p>
+        </div>
+        <div id="repo-grid" class="repo-grid"></div>
+        <p id="empty-state" class="empty-state" hidden>没有符合条件的仓库。</p>
+      </section>
+
+      <section class="split-section">
+        <article aria-labelledby="release-title">
+          <p class="eyebrow">RELEASE PULSE</p>
+          <h2 id="release-title">版本动态</h2>
+          <div id="release-feed" class="feed"></div>
+        </article>
+        <article aria-labelledby="report-title">
+          <p class="eyebrow">WEEKLY DIGEST</p>
+          <h2 id="report-title">本周观察</h2>
+          <div id="weekly-report" class="weekly-report"></div>
+        </article>
+      </section>
+    </main>
+
+    <dialog id="repo-dialog" aria-labelledby="dialog-title">
+      <button class="dialog-close" type="button" aria-label="关闭仓库详情">×</button>
+      <div id="dialog-content"></div>
+    </dialog>
+
+    <footer>
+      <p>OpenScope AI · 数据来自 GitHub 公共 API · 不收集访客信息</p>
+    </footer>
+  </body>
+</html>
+

@@ -1,0 +1,20 @@
+{
+  "collection": {
+    "configured": 0,
+    "failed": 0,
+    "failed_repositories": [],
+    "stale": 0,
+    "succeeded": 0
+  },
+  "generated_at": null,
+  "latest_date": null,
+  "notice": "热度反映关注与活跃变化，不代表项目质量",
+  "repositories": [],
+  "schema_version": 1,
+  "snapshot_days": 0,
+  "status": "empty",
+  "weekly_report": {
+    "path": "reports/2026-W39.md",
+    "week": "2026-W39"
+  }
+}
