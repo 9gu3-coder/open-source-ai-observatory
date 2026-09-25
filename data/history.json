@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-25T05:44:52.152248Z",
+  "generated_at": "2026-09-25T05:49:08.920520Z",
   "schema_version": 1,
   "snapshots": [
     {
@@ -344,7 +344,7 @@
           "language": "TypeScript",
           "license_name": "NOASSERTION",
           "open_issues": 976,
-          "pushed_at": "2026-09-25T05:25:22Z",
+          "pushed_at": "2026-09-25T05:48:52Z",
           "reason": "智能体组织、运行与交互平台",
           "release": {
             "name": "🚀 Release v2.2.18",
@@ -519,7 +519,7 @@
           ],
           "language": "Python",
           "license_name": "NOASSERTION",
-          "open_issues": 17588,
+          "open_issues": 17589,
           "pushed_at": "2026-09-25T05:42:32Z",
           "reason": "广泛使用的深度学习框架",
           "release": {
@@ -608,7 +608,7 @@
           "language": "C++",
           "license_name": "Apache-2.0",
           "open_issues": 3318,
-          "pushed_at": "2026-09-25T05:39:43Z",
+          "pushed_at": "2026-09-25T05:44:53Z",
           "reason": "成熟的机器学习与部署框架",
           "release": {
             "name": "TensorFlow 2.21.0",
@@ -651,7 +651,7 @@
           ],
           "language": "Python",
           "license_name": "Apache-2.0",
-          "open_issues": 8371,
+          "open_issues": 8372,
           "pushed_at": "2026-09-25T05:33:37Z",
           "reason": "高吞吐大模型推理与服务",
           "release": {
