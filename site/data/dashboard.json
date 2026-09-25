@@ -1,18 +1,724 @@
 {
   "collection": {
-    "configured": 0,
+    "configured": 15,
     "failed": 0,
     "failed_repositories": [],
     "stale": 0,
-    "succeeded": 0
+    "succeeded": 15
   },
-  "generated_at": null,
-  "latest_date": null,
+  "generated_at": "2026-09-25T03:47:22.242381Z",
+  "latest_date": "2026-09-25",
   "notice": "热度反映关注与活跃变化，不代表项目质量",
-  "repositories": [],
+  "repositories": [
+    {
+      "api_url": "https://api.github.com/repos/tensorflow/tensorflow",
+      "category": "模型框架",
+      "configured_full_name": "tensorflow/tensorflow",
+      "description": "An Open Source Machine Learning Framework for Everyone",
+      "display_name": "TensorFlow",
+      "forks": 77285,
+      "full_name": "tensorflow/tensorflow",
+      "issues": [
+        {
+          "comments": 113,
+          "number": 89272,
+          "title": "TensorFlow on RTX 5090",
+          "url": "https://github.com/tensorflow/tensorflow/issues/89272"
+        },
+        {
+          "comments": 61,
+          "number": 91656,
+          "title": "TensorFlow DLL failed to load with newer version of TF",
+          "url": "https://github.com/tensorflow/tensorflow/issues/91656"
+        },
+        {
+          "comments": 59,
+          "number": 33131,
+          "title": "how to assign value to a EagerTensor slice? ----'tensorflow.python.framework.ops.EagerTensor' object does not support item assignment",
+          "url": "https://github.com/tensorflow/tensorflow/issues/33131"
+        }
+      ],
+      "language": "C++",
+      "license_name": "Apache-2.0",
+      "open_issues": 3323,
+      "pushed_at": "2026-09-25T03:44:51Z",
+      "reason": "成熟的机器学习与部署框架",
+      "release": {
+        "name": "TensorFlow 2.21.0",
+        "published_at": "2026-03-06T19:48:15Z",
+        "tag_name": "v2.21.0",
+        "url": "https://github.com/tensorflow/tensorflow/releases/tag/v2.21.0"
+      },
+      "source_url": "https://github.com/tensorflow/tensorflow",
+      "stale": false,
+      "stale_reason": null,
+      "star_delta_30d": null,
+      "star_delta_7d": null,
+      "stars": 200296,
+      "trend_score": null
+    },
+    {
+      "api_url": "https://api.github.com/repos/ollama/ollama",
+      "category": "AI 应用",
+      "configured_full_name": "ollama/ollama",
+      "description": "Get up and running with Kimi, GLM, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models.",
+      "display_name": "Ollama",
+      "forks": 17999,
+      "full_name": "ollama/ollama",
+      "issues": [
+        {
+          "comments": 172,
+          "number": 1016,
+          "title": "Support AMD GPUs on Intel Macs",
+          "url": "https://github.com/ollama/ollama/issues/1016"
+        },
+        {
+          "comments": 162,
+          "number": 941,
+          "title": "`digest mismatch` on download",
+          "url": "https://github.com/ollama/ollama/issues/941"
+        },
+        {
+          "comments": 113,
+          "number": 3368,
+          "title": "Reranking models",
+          "url": "https://github.com/ollama/ollama/issues/3368"
+        }
+      ],
+      "language": "Go",
+      "license_name": "MIT",
+      "open_issues": 4074,
+      "pushed_at": "2026-09-25T02:27:55Z",
+      "reason": "本地运行开放模型的常用工具",
+      "release": {
+        "name": "v0.34.4",
+        "published_at": "2026-09-23T02:24:43Z",
+        "tag_name": "v0.34.4",
+        "url": "https://github.com/ollama/ollama/releases/tag/v0.34.4"
+      },
+      "source_url": "https://github.com/ollama/ollama",
+      "stale": false,
+      "stale_reason": null,
+      "star_delta_30d": null,
+      "star_delta_7d": null,
+      "stars": 181657,
+      "trend_score": null
+    },
+    {
+      "api_url": "https://api.github.com/repos/huggingface/transformers",
+      "category": "模型框架",
+      "configured_full_name": "huggingface/transformers",
+      "description": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training. ",
+      "display_name": "Transformers",
+      "forks": 34667,
+      "full_name": "huggingface/transformers",
+      "issues": [
+        {
+          "comments": 116,
+          "number": 26350,
+          "title": "Community contribution: Adding Flash Attention 2 support for more architectures",
+          "url": "https://github.com/huggingface/transformers/issues/26350"
+        },
+        {
+          "comments": 75,
+          "number": 17459,
+          "title": "Tranformers documentation translation to Italian",
+          "url": "https://github.com/huggingface/transformers/issues/17459"
+        },
+        {
+          "comments": 52,
+          "number": 33260,
+          "title": "Community contribution: Adding GGUF support for more architectures",
+          "url": "https://github.com/huggingface/transformers/issues/33260"
+        }
+      ],
+      "language": "Python",
+      "license_name": "Apache-2.0",
+      "open_issues": 2390,
+      "pushed_at": "2026-09-25T00:53:11Z",
+      "reason": "主流多模态模型定义与推理生态",
+      "release": {
+        "name": "Release 5.17.0",
+        "published_at": "2026-09-09T15:42:45Z",
+        "tag_name": "v5.17.0",
+        "url": "https://github.com/huggingface/transformers/releases/tag/v5.17.0"
+      },
+      "source_url": "https://github.com/huggingface/transformers",
+      "stale": false,
+      "stale_reason": null,
+      "star_delta_30d": null,
+      "star_delta_7d": null,
+      "stars": 166620,
+      "trend_score": null
+    },
+    {
+      "api_url": "https://api.github.com/repos/langgenius/dify",
+      "category": "AI 应用",
+      "configured_full_name": "langgenius/dify",
+      "description": "Build Agentic workflows, RAG pipelines, with rich AI model and tool support on one collaborative workspace. Deploy on cloud, VPC, or self-hosted, so teams move from prototype to production without rebuilding the stack.",
+      "display_name": "Dify",
+      "forks": 24772,
+      "full_name": "langgenius/dify",
+      "issues": [
+        {
+          "comments": 70,
+          "number": 39161,
+          "title": "Chatflow/Workflow \"Agent\" node (agent_v2) is unusable in the standard `docker/dify` deployment — requires an undeployed \"Agent backend\" service",
+          "url": "https://github.com/langgenius/dify/issues/39161"
+        },
+        {
+          "comments": 61,
+          "number": 39151,
+          "title": "Parallel fail-fast leaves collateral node failures unattributed and stale",
+          "url": "https://github.com/langgenius/dify/issues/39151"
+        },
+        {
+          "comments": 52,
+          "number": 40372,
+          "title": "rewrite property to accept session: Session as parameter",
+          "url": "https://github.com/langgenius/dify/issues/40372"
+        }
+      ],
+      "language": "TypeScript",
+      "license_name": "NOASSERTION",
+      "open_issues": 1093,
+      "pushed_at": "2026-09-25T02:43:27Z",
+      "reason": "可视化智能体工作流与 RAG 平台",
+      "release": {
+        "name": "v1.17.1 - Bug Fixes and Improvements",
+        "published_at": "2026-09-10T10:04:06Z",
+        "tag_name": "1.17.1",
+        "url": "https://github.com/langgenius/dify/releases/tag/1.17.1"
+      },
+      "source_url": "https://github.com/langgenius/dify",
+      "stale": false,
+      "stale_reason": null,
+      "star_delta_30d": null,
+      "star_delta_7d": null,
+      "stars": 157128,
+      "trend_score": null
+    },
+    {
+      "api_url": "https://api.github.com/repos/open-webui/open-webui",
+      "category": "AI 应用",
+      "configured_full_name": "open-webui/open-webui",
+      "description": "User-friendly AI Interface (Supports Ollama, OpenAI API, ...)",
+      "display_name": "Open WebUI",
+      "forks": 22394,
+      "full_name": "open-webui/open-webui",
+      "issues": [
+        {
+          "comments": 97,
+          "number": 21675,
+          "title": "enh: analytics",
+          "url": "https://github.com/open-webui/open-webui/issues/21675"
+        },
+        {
+          "comments": 46,
+          "number": 1225,
+          "title": "feat: 2FA/MFA TOTP support",
+          "url": "https://github.com/open-webui/open-webui/issues/1225"
+        },
+        {
+          "comments": 46,
+          "number": 19313,
+          "title": "feat: User specific MCP headers",
+          "url": "https://github.com/open-webui/open-webui/issues/19313"
+        }
+      ],
+      "language": "Python",
+      "license_name": "NOASSERTION",
+      "open_issues": 325,
+      "pushed_at": "2026-09-24T19:58:50Z",
+      "reason": "可自托管的通用 AI 交互界面",
+      "release": {
+        "name": "v0.11.4",
+        "published_at": "2026-09-21T19:25:21Z",
+        "tag_name": "v0.11.4",
+        "url": "https://github.com/open-webui/open-webui/releases/tag/v0.11.4"
+      },
+      "source_url": "https://github.com/open-webui/open-webui",
+      "stale": false,
+      "stale_reason": null,
+      "star_delta_30d": null,
+      "star_delta_7d": null,
+      "stars": 153092,
+      "trend_score": null
+    },
+    {
+      "api_url": "https://api.github.com/repos/langchain-ai/langchain",
+      "category": "智能体框架",
+      "configured_full_name": "langchain-ai/langchain",
+      "description": "The agent engineering platform.",
+      "display_name": "LangChain",
+      "forks": 24603,
+      "full_name": "langchain-ai/langchain",
+      "issues": [
+        {
+          "comments": 37,
+          "number": 31802,
+          "title": "`EvaluationResult.feedback_config` silently drops unknown or partial dict fields without error",
+          "url": "https://github.com/langchain-ai/langchain/issues/31802"
+        },
+        {
+          "comments": 35,
+          "number": 32885,
+          "title": "Harmony: bad request on gpt-oss-120b and tool calls with `create_react_agent`",
+          "url": "https://github.com/langchain-ai/langchain/issues/32885"
+        },
+        {
+          "comments": 30,
+          "number": 32197,
+          "title": "Support structured output with Pydantic models in `langchain-huggingface`",
+          "url": "https://github.com/langchain-ai/langchain/issues/32197"
+        }
+      ],
+      "language": "Python",
+      "license_name": "MIT",
+      "open_issues": 569,
+      "pushed_at": "2026-09-24T22:07:27Z",
+      "reason": "智能体与大模型应用编排平台",
+      "release": {
+        "name": "langchain-core==1.6.5",
+        "published_at": "2026-09-24T18:11:22Z",
+        "tag_name": "langchain-core==1.6.5",
+        "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.6.5"
+      },
+      "source_url": "https://github.com/langchain-ai/langchain",
+      "stale": false,
+      "stale_reason": null,
+      "star_delta_30d": null,
+      "star_delta_7d": null,
+      "stars": 147020,
+      "trend_score": null
+    },
+    {
+      "api_url": "https://api.github.com/repos/Comfy-Org/ComfyUI",
+      "category": "AI 应用",
+      "configured_full_name": "Comfy-Org/ComfyUI",
+      "description": "The most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface.",
+      "display_name": "ComfyUI",
+      "forks": 15973,
+      "full_name": "Comfy-Org/ComfyUI",
+      "issues": [
+        {
+          "comments": 118,
+          "number": 14618,
+          "title": "ComfyUI keeps loading models on every prompt change",
+          "url": "https://github.com/Comfy-Org/ComfyUI/issues/14618"
+        },
+        {
+          "comments": 113,
+          "number": 4271,
+          "title": "Flux.1 Dev, memory issue",
+          "url": "https://github.com/Comfy-Org/ComfyUI/issues/4271"
+        },
+        {
+          "comments": 78,
+          "number": 10068,
+          "title": "HunyuanImage-3.0 Release",
+          "url": "https://github.com/Comfy-Org/ComfyUI/issues/10068"
+        }
+      ],
+      "language": "Python",
+      "license_name": "GPL-3.0",
+      "open_issues": 4938,
+      "pushed_at": "2026-09-25T03:25:17Z",
+      "reason": "节点式生成式图像工作流",
+      "release": {
+        "name": "v0.37.0",
+        "published_at": "2026-09-21T07:35:01Z",
+        "tag_name": "v0.37.0",
+        "url": "https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.37.0"
+      },
+      "source_url": "https://github.com/Comfy-Org/ComfyUI",
+      "stale": false,
+      "stale_reason": null,
+      "star_delta_30d": null,
+      "star_delta_7d": null,
+      "stars": 134880,
+      "trend_score": null
+    },
+    {
+      "api_url": "https://api.github.com/repos/ggml-org/llama.cpp",
+      "category": "推理引擎",
+      "configured_full_name": "ggml-org/llama.cpp",
+      "description": "LLM inference in C/C++",
+      "display_name": "llama.cpp",
+      "forks": 23698,
+      "full_name": "ggml-org/llama.cpp",
+      "issues": [
+        {
+          "comments": 83,
+          "number": 10528,
+          "title": "Misc. bug: Inconsistent Vulkan segfault",
+          "url": "https://github.com/ggml-org/llama.cpp/issues/10528"
+        },
+        {
+          "comments": 60,
+          "number": 20837,
+          "title": "Eval bug: Qwen3.5 9B often prints tool calls in XML and stops when thinking is enabled - tool calls inside thinking block",
+          "url": "https://github.com/ggml-org/llama.cpp/issues/20837"
+        },
+        {
+          "comments": 54,
+          "number": 2164,
+          "title": "mpi : attempt inference of 65B LLaMA on a cluster of Raspberry Pis",
+          "url": "https://github.com/ggml-org/llama.cpp/issues/2164"
+        }
+      ],
+      "language": "C++",
+      "license_name": "MIT",
+      "open_issues": 2526,
+      "pushed_at": "2026-09-25T03:15:34Z",
+      "reason": "本地与边缘设备上的轻量模型推理",
+      "release": {
+        "name": "v0.5.0",
+        "published_at": "2026-09-23T20:50:06Z",
+        "tag_name": "v0.5.0",
+        "url": "https://github.com/ggml-org/llama.cpp/releases/tag/v0.5.0"
+      },
+      "source_url": "https://github.com/ggml-org/llama.cpp",
+      "stale": false,
+      "stale_reason": null,
+      "star_delta_30d": null,
+      "star_delta_7d": null,
+      "stars": 129457,
+      "trend_score": null
+    },
+    {
+      "api_url": "https://api.github.com/repos/browser-use/browser-use",
+      "category": "智能体框架",
+      "configured_full_name": "browser-use/browser-use",
+      "description": "Agents that use the browser.",
+      "display_name": "browser-use",
+      "forks": 12796,
+      "full_name": "browser-use/browser-use",
+      "issues": [
+        {
+          "comments": 16,
+          "number": 4798,
+          "title": "Feature Request: Support agent.pause() within tool calls",
+          "url": "https://github.com/browser-use/browser-use/issues/4798"
+        },
+        {
+          "comments": 15,
+          "number": 4742,
+          "title": "Bug: Screenshot blob in tool result poisons conversation context → API 400 on all subsequent turns",
+          "url": "https://github.com/browser-use/browser-use/issues/4742"
+        },
+        {
+          "comments": 13,
+          "number": 4634,
+          "title": "Scoped delegation for browser actions — governance layer between LLM decisions and real clicks",
+          "url": "https://github.com/browser-use/browser-use/issues/4634"
+        }
+      ],
+      "language": "Python",
+      "license_name": "MIT",
+      "open_issues": 492,
+      "pushed_at": "2026-09-24T01:38:47Z",
+      "reason": "浏览器自动化智能体工具",
+      "release": {
+        "name": "0.13.10",
+        "published_at": "2026-09-04T03:28:53Z",
+        "tag_name": "0.13.10",
+        "url": "https://github.com/browser-use/browser-use/releases/tag/0.13.10"
+      },
+      "source_url": "https://github.com/browser-use/browser-use",
+      "stale": false,
+      "stale_reason": null,
+      "star_delta_30d": null,
+      "star_delta_7d": null,
+      "stars": 116213,
+      "trend_score": null
+    },
+    {
+      "api_url": "https://api.github.com/repos/pytorch/pytorch",
+      "category": "模型框架",
+      "configured_full_name": "pytorch/pytorch",
+      "description": "Tensors and Dynamic neural networks in Python with strong GPU acceleration",
+      "display_name": "PyTorch",
+      "forks": 30296,
+      "full_name": "pytorch/pytorch",
+      "issues": [
+        {
+          "comments": 1796,
+          "number": 77764,
+          "title": "General MPS op coverage tracking issue",
+          "url": "https://github.com/pytorch/pytorch/issues/77764"
+        },
+        {
+          "comments": 1296,
+          "number": 93531,
+          "title": "TorchInductor CPU Performance Dashboard",
+          "url": "https://github.com/pytorch/pytorch/issues/93531"
+        },
+        {
+          "comments": 267,
+          "number": 141287,
+          "title": "MPS operator coverage tracking issue (2.6+ version)",
+          "url": "https://github.com/pytorch/pytorch/issues/141287"
+        }
+      ],
+      "language": "Python",
+      "license_name": "NOASSERTION",
+      "open_issues": 17588,
+      "pushed_at": "2026-09-25T03:37:53Z",
+      "reason": "广泛使用的深度学习框架",
+      "release": {
+        "name": "PyTorch 2.14.0 Release",
+        "published_at": "2026-09-02T17:40:10Z",
+        "tag_name": "v2.14.0",
+        "url": "https://github.com/pytorch/pytorch/releases/tag/v2.14.0"
+      },
+      "source_url": "https://github.com/pytorch/pytorch",
+      "stale": false,
+      "stale_reason": null,
+      "star_delta_30d": null,
+      "star_delta_7d": null,
+      "stars": 103272,
+      "trend_score": null
+    },
+    {
+      "api_url": "https://api.github.com/repos/vllm-project/vllm",
+      "category": "推理引擎",
+      "configured_full_name": "vllm-project/vllm",
+      "description": "A high-throughput and memory-efficient inference and serving engine for LLMs",
+      "display_name": "vLLM",
+      "forks": 22639,
+      "full_name": "vllm-project/vllm",
+      "issues": [
+        {
+          "comments": 108,
+          "number": 50576,
+          "title": "[Feature]: SM8x (Ampere A100/A800) support for DeepSeek-V4-Flash / DeepSeek-V4-Flash-0731 DSpark",
+          "url": "https://github.com/vllm-project/vllm/issues/50576"
+        },
+        {
+          "comments": 98,
+          "number": 4194,
+          "title": "[RFC]: Multi-modality Support on vLLM",
+          "url": "https://github.com/vllm-project/vllm/issues/4194"
+        },
+        {
+          "comments": 95,
+          "number": 27433,
+          "title": "[Feature]: Batch Invariant Feature and Performance Optimization",
+          "url": "https://github.com/vllm-project/vllm/issues/27433"
+        }
+      ],
+      "language": "Python",
+      "license_name": "Apache-2.0",
+      "open_issues": 8378,
+      "pushed_at": "2026-09-25T03:27:21Z",
+      "reason": "高吞吐大模型推理与服务",
+      "release": {
+        "name": "v0.30.0",
+        "published_at": "2026-09-22T05:20:54Z",
+        "tag_name": "v0.30.0",
+        "url": "https://github.com/vllm-project/vllm/releases/tag/v0.30.0"
+      },
+      "source_url": "https://github.com/vllm-project/vllm",
+      "stale": false,
+      "stale_reason": null,
+      "star_delta_30d": null,
+      "star_delta_7d": null,
+      "stars": 92648,
+      "trend_score": null
+    },
+    {
+      "api_url": "https://api.github.com/repos/lobehub/lobehub",
+      "category": "AI 应用",
+      "configured_full_name": "lobehub/lobehub",
+      "description": "🤯 LobeHub is your Chief Agent Operator, organizing your agents into 7×24 operations by hiring, scheduling, and reporting on your entire AI team.",
+      "display_name": "LobeHub",
+      "forks": 15920,
+      "full_name": "lobehub/lobehub",
+      "issues": [
+        {
+          "comments": 41,
+          "number": 12899,
+          "title": "Database migration issue with pgsearch",
+          "url": "https://github.com/lobehub/lobehub/issues/12899"
+        },
+        {
+          "comments": 21,
+          "number": 17439,
+          "title": "一些建议",
+          "url": "https://github.com/lobehub/lobehub/issues/17439"
+        },
+        {
+          "comments": 16,
+          "number": 16533,
+          "title": "Desktop 2.2.9: STDIO MCP tools/list succeeds, but connector.syncTools fails and no tool permissions are registered",
+          "url": "https://github.com/lobehub/lobehub/issues/16533"
+        }
+      ],
+      "language": "TypeScript",
+      "license_name": "NOASSERTION",
+      "open_issues": 974,
+      "pushed_at": "2026-09-25T03:46:41Z",
+      "reason": "智能体组织、运行与交互平台",
+      "release": {
+        "name": "🚀 Release v2.2.18",
+        "published_at": "2026-09-20T13:11:30Z",
+        "tag_name": "v2.2.18",
+        "url": "https://github.com/lobehub/lobehub/releases/tag/v2.2.18"
+      },
+      "source_url": "https://github.com/lobehub/lobehub",
+      "stale": false,
+      "stale_reason": null,
+      "star_delta_30d": null,
+      "star_delta_7d": null,
+      "stars": 82807,
+      "trend_score": null
+    },
+    {
+      "api_url": "https://api.github.com/repos/microsoft/autogen",
+      "category": "智能体框架",
+      "configured_full_name": "microsoft/autogen",
+      "description": "A programming framework for agentic AI",
+      "display_name": "AutoGen",
+      "forks": 9251,
+      "full_name": "microsoft/autogen",
+      "issues": [
+        {
+          "comments": 392,
+          "number": 7353,
+          "title": "Feature: Cryptographic action receipts for enterprise agent governance (AAR)",
+          "url": "https://github.com/microsoft/autogen/issues/7353"
+        },
+        {
+          "comments": 138,
+          "number": 7405,
+          "title": "Proposal: GuardrailProvider protocol for tool call interception",
+          "url": "https://github.com/microsoft/autogen/issues/7405"
+        },
+        {
+          "comments": 73,
+          "number": 7487,
+          "title": "Multi-agent systems need a 'mission keeper' role — not a Boss Agent, but a dedicated goal integrity node",
+          "url": "https://github.com/microsoft/autogen/issues/7487"
+        }
+      ],
+      "language": "Python",
+      "license_name": "CC-BY-4.0",
+      "open_issues": 1099,
+      "pushed_at": "2026-04-15T11:59:09Z",
+      "reason": "多智能体应用编程框架",
+      "release": {
+        "name": "python-v0.7.5",
+        "published_at": "2025-09-30T06:18:26Z",
+        "tag_name": "python-v0.7.5",
+        "url": "https://github.com/microsoft/autogen/releases/tag/python-v0.7.5"
+      },
+      "source_url": "https://github.com/microsoft/autogen",
+      "stale": false,
+      "stale_reason": null,
+      "star_delta_30d": null,
+      "star_delta_7d": null,
+      "stars": 61149,
+      "trend_score": null
+    },
+    {
+      "api_url": "https://api.github.com/repos/run-llama/llama_index",
+      "category": "智能体框架",
+      "configured_full_name": "run-llama/llama_index",
+      "description": "LlamaIndex is the document processing platform for AI",
+      "display_name": "LlamaIndex",
+      "forks": 8208,
+      "full_name": "run-llama/llama_index",
+      "issues": [
+        {
+          "comments": 42,
+          "number": 19605,
+          "title": "[Question]: Document Summary Index related issues",
+          "url": "https://github.com/run-llama/llama_index/issues/19605"
+        },
+        {
+          "comments": 34,
+          "number": 19370,
+          "title": "[Bug]: llama index Odata filter for azure ai search vector store is not filtering the chunks",
+          "url": "https://github.com/run-llama/llama_index/issues/19370"
+        },
+        {
+          "comments": 31,
+          "number": 20386,
+          "title": "[Feature Request]: Deterministic tool I/O pre/post-processing (middleware/hooks) for agents (MCP motivating case)",
+          "url": "https://github.com/run-llama/llama_index/issues/20386"
+        }
+      ],
+      "language": "Python",
+      "license_name": "MIT",
+      "open_issues": 855,
+      "pushed_at": "2026-09-25T02:52:56Z",
+      "reason": "面向数据与文档的大模型应用框架",
+      "release": {
+        "name": "v0.14.25",
+        "published_at": "2026-09-21T16:22:27Z",
+        "tag_name": "v0.14.25",
+        "url": "https://github.com/run-llama/llama_index/releases/tag/v0.14.25"
+      },
+      "source_url": "https://github.com/run-llama/llama_index",
+      "stale": false,
+      "stale_reason": null,
+      "star_delta_30d": null,
+      "star_delta_7d": null,
+      "stars": 52310,
+      "trend_score": null
+    },
+    {
+      "api_url": "https://api.github.com/repos/huggingface/smolagents",
+      "category": "智能体框架",
+      "configured_full_name": "huggingface/smolagents",
+      "description": "🤗 smolagents: a barebones library for agents that think in code.",
+      "display_name": "smolagents",
+      "forks": 2996,
+      "full_name": "huggingface/smolagents",
+      "issues": [
+        {
+          "comments": 39,
+          "number": 201,
+          "title": "Repeatedly getting \"Error in code parsing: Your code snippet is invalid\"",
+          "url": "https://github.com/huggingface/smolagents/issues/201"
+        },
+        {
+          "comments": 24,
+          "number": 2117,
+          "title": "ENH: Add pre-tool-call authorization layer to MultiStepAgent",
+          "url": "https://github.com/huggingface/smolagents/issues/2117"
+        },
+        {
+          "comments": 17,
+          "number": 2654,
+          "title": "ENH: [Feature] Governance middleware hooks for tool/code execution (PII blocking, cost caps, tool authorization)",
+          "url": "https://github.com/huggingface/smolagents/issues/2654"
+        }
+      ],
+      "language": "Python",
+      "license_name": "Apache-2.0",
+      "open_issues": 829,
+      "pushed_at": "2026-09-23T13:13:00Z",
+      "reason": "轻量代码型智能体库",
+      "release": {
+        "name": "v1.26.0",
+        "published_at": "2026-05-29T05:09:47Z",
+        "tag_name": "v1.26.0",
+        "url": "https://github.com/huggingface/smolagents/releases/tag/v1.26.0"
+      },
+      "source_url": "https://github.com/huggingface/smolagents",
+      "stale": false,
+      "stale_reason": null,
+      "star_delta_30d": null,
+      "star_delta_7d": null,
+      "stars": 29480,
+      "trend_score": null
+    }
+  ],
   "schema_version": 1,
-  "snapshot_days": 0,
-  "status": "empty",
+  "snapshot_days": 1,
+  "status": "accumulating",
   "weekly_report": {
     "path": "reports/2026-W39.md",
     "week": "2026-W39"
