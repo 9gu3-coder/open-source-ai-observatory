@@ -79,6 +79,21 @@ def _latest_records(history: dict[str, Any] | None) -> dict[str, dict[str, Any]]
     }
 
 
+def _add_repository_guides(
+    dashboard: dict[str, Any], configs: list[RepoConfig]
+) -> None:
+    """Attach current editorial guidance without duplicating it in daily history."""
+
+    guides = {config.full_name: config for config in configs}
+    for repository in dashboard["repositories"]:
+        config = guides.get(repository.get("configured_full_name"))
+        if config is None:
+            continue
+        repository["what_it_is"] = config.what_it_is
+        repository["why_use_it"] = config.why_use_it
+        repository["use_cases"] = list(config.use_cases)
+
+
 def _write_outputs(
     history_path: Path,
     site_dir: Path,
@@ -139,6 +154,7 @@ def run_pipeline(
     local_now = _shanghai_now(now)
     history = update_history(existing, collected, local_now.date().isoformat())
     dashboard = build_dashboard(history)
+    _add_repository_guides(dashboard, configs)
     report_name = _week_name(now)
     dashboard["collection"] = {
         "configured": len(configs),
@@ -164,12 +180,18 @@ def run_pipeline(
     )
 
 
-def build_offline(history_path: Path, site_dir: Path, now: datetime) -> PipelineResult:
+def build_offline(
+    history_path: Path,
+    site_dir: Path,
+    now: datetime,
+    config_path: Path = Path("config/repos.yaml"),
+) -> PipelineResult:
     """Rebuild public artifacts from local history without any network access."""
 
     history = load_history(history_path)
     if history and history.get("snapshots"):
         dashboard = build_dashboard(history)
+        _add_repository_guides(dashboard, load_repos(config_path))
     else:
         dashboard = {
             "schema_version": 1,

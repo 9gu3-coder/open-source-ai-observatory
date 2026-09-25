@@ -19,9 +19,19 @@ class RepoConfig:
     display_name: str
     category: str
     reason: str
+    what_it_is: str = ""
+    why_use_it: str = ""
+    use_cases: tuple[str, ...] = ()
 
 
-_REQUIRED_FIELDS = ("full_name", "display_name", "category", "reason")
+_REQUIRED_TEXT_FIELDS = (
+    "full_name",
+    "display_name",
+    "category",
+    "reason",
+    "what_it_is",
+    "why_use_it",
+)
 
 
 def _required_text(entry: dict[str, Any], field: str, index: int) -> str:
@@ -47,7 +57,17 @@ def load_repos(path: Path) -> list[RepoConfig]:
     for index, item in enumerate(raw):
         if not isinstance(item, dict):
             raise ConfigError(f"第 {index + 1} 项必须是对象")
-        values = {field: _required_text(item, field, index) for field in _REQUIRED_FIELDS}
+        values = {
+            field: _required_text(item, field, index) for field in _REQUIRED_TEXT_FIELDS
+        }
+        raw_use_cases = item.get("use_cases")
+        if (
+            not isinstance(raw_use_cases, list)
+            or len(raw_use_cases) < 2
+            or any(not isinstance(value, str) or not value.strip() for value in raw_use_cases)
+        ):
+            raise ConfigError(f"第 {index + 1} 项的 use_cases 必须包含至少两个非空字符串")
+        values["use_cases"] = tuple(value.strip() for value in raw_use_cases)
         full_name = values["full_name"]
         parts = full_name.split("/")
         if len(parts) != 2 or not all(parts):
@@ -58,4 +78,3 @@ def load_repos(path: Path) -> list[RepoConfig]:
         repos.append(RepoConfig(**values))
 
     return repos
-

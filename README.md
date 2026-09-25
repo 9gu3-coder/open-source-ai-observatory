@@ -49,9 +49,14 @@ GITHUB_TOKEN=你的令牌 python -m openscope.cli collect
   display_name: 页面显示名称
   category: 分类名称
   reason: 为什么值得观察
+  what_it_is: 这个项目是什么
+  why_use_it: AI 应用开发者为什么会使用它
+  use_cases:
+    - 典型应用场景一
+    - 典型应用场景二
 ```
 
-`full_name` 必须唯一，并严格使用 `owner/repository` 格式。修改后先运行测试，再提交。
+`full_name` 必须唯一，并严格使用 `owner/repository` 格式。`use_cases` 至少包含两个非空场景。介绍内容会出现在项目详情中，并参与中文搜索；修改后先运行测试，再提交。
 
 ## 手动运行自动任务
 
@@ -100,4 +105,3 @@ GitHub 可能在高峰期延迟定时任务。公开仓库连续 **60 天** 没�
 | 本地安装失败 | 确认 Python 版本至少为 3.12，然后删除 `.venv` 并重新执行安装命令。 |
 
 更多细节见 [架构说明](docs/architecture.md) 和 [新手维护指南](docs/maintenance.md)。
-

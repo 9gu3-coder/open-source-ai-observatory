@@ -50,7 +50,17 @@ function showDetails(repo) {
   const title = node("h2", "", repo.display_name);
   title.id = "dialog-title";
   content.append(node("p", "category", repo.category), title, node("p", "repo-name", repo.full_name));
-  content.append(node("p", "description", repo.description || "该项目暂未提供简介。"));
+
+  const guide = node("div", "project-guide");
+  guide.append(node("h3", "", "它是什么"));
+  guide.append(node("p", "description", repo.what_it_is || repo.description || "该项目暂未提供简介。"));
+  guide.append(node("h3", "", "为什么使用"));
+  guide.append(node("p", "description", repo.why_use_it || repo.reason));
+  guide.append(node("h3", "", "可以做什么"));
+  const useCases = node("ul", "use-cases");
+  (repo.use_cases || []).forEach((useCase) => useCases.append(node("li", "", useCase)));
+  guide.append(useCases);
+  content.append(guide);
   content.append(link("查看 GitHub 原始页面 ↗", repo.source_url, "source-button"));
 
   const metrics = node("dl", "detail-metrics");
@@ -96,7 +106,7 @@ function card(repo) {
   top.append(node("span", "category", repo.category));
   if (repo.stale) top.append(node("span", "stale", "数据可能过期"));
   article.append(top, node("h3", "", repo.display_name), node("p", "repo-name", repo.full_name));
-  article.append(node("p", "description", repo.description || repo.reason));
+  article.append(node("p", "description", repo.what_it_is || repo.description || repo.reason));
 
   const metrics = node("div", "metrics");
   const trend = repo.trend_score == null ? "积累中" : repo.trend_score.toFixed(1);
@@ -117,7 +127,15 @@ function renderRepositories() {
   const repositories = state.data?.repositories || [];
   const query = state.query.toLocaleLowerCase("zh-CN");
   const visible = repositories.filter((repo) => {
-    const haystack = [repo.display_name, repo.full_name, repo.language, repo.description].filter(Boolean).join(" ").toLocaleLowerCase("zh-CN");
+    const haystack = [
+      repo.display_name,
+      repo.full_name,
+      repo.language,
+      repo.description,
+      repo.what_it_is,
+      repo.why_use_it,
+      ...(repo.use_cases || []),
+    ].filter(Boolean).join(" ").toLocaleLowerCase("zh-CN");
     return (!query || haystack.includes(query)) && (!state.category || repo.category === state.category);
   });
   byId("repo-grid").replaceChildren(...visible.map(card));

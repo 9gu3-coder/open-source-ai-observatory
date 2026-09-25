@@ -13,7 +13,7 @@
 
 ## 添加或替换仓库
 
-1. 编辑 `config/repos.yaml`，保持总数为 15。
+1. 编辑 `config/repos.yaml`，保持总数为 15，并为项目填写 `what_it_is`、`why_use_it` 和至少两个 `use_cases`。
 2. `full_name` 从 GitHub 地址取得。例如 `https://github.com/owner/repo` 对应 `owner/repo`。
 3. 分类优先使用已有的“模型框架”“推理引擎”“智能体框架”“AI 应用”。
 4. 运行：
@@ -70,4 +70,3 @@ python -m ruff check .
 - [ ] `git diff --check` 无空白错误。
 - [ ] 配置和生成文件中没有令牌、密码或私钥。
 - [ ] 页面仍显示“热度反映关注与活跃变化，不代表项目质量”。
-

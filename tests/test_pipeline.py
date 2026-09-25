@@ -126,6 +126,9 @@ def test_successful_pipeline_writes_dashboard_and_weekly_report(tmp_path: Path) 
         item["source_url"].startswith("https://github.com/")
         for item in dashboard["repositories"]
     )
+    assert all(item["what_it_is"] for item in dashboard["repositories"])
+    assert all(item["why_use_it"] for item in dashboard["repositories"])
+    assert all(len(item["use_cases"]) >= 2 for item in dashboard["repositories"])
     assert result.report_path.name == "2026-W39.md"
     assert "OpenScope AI 周报" in result.report_path.read_text(encoding="utf-8")
 

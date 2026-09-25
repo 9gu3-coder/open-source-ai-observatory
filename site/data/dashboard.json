@@ -55,7 +55,14 @@
       "star_delta_30d": null,
       "star_delta_7d": null,
       "stars": 200296,
-      "trend_score": null
+      "trend_score": null,
+      "use_cases": [
+        "使用 Keras 训练分类、预测和推荐模型",
+        "将模型部署到移动端、边缘设备或生产服务",
+        "维护企业中已有的 TensorFlow 机器学习系统"
+      ],
+      "what_it_is": "一套覆盖模型开发、训练和部署的机器学习平台，常与 Keras、TensorFlow Lite 等工具配合使用。",
+      "why_use_it": "它的工程化与部署工具成熟，尤其适合已有 TensorFlow 技术栈，或需要把模型部署到服务器、浏览器和移动设备的团队。"
     },
     {
       "api_url": "https://api.github.com/repos/ollama/ollama",
@@ -102,7 +109,14 @@
       "star_delta_30d": null,
       "star_delta_7d": null,
       "stars": 181657,
-      "trend_score": null
+      "trend_score": null,
+      "use_cases": [
+        "在电脑上快速试用不同的开源聊天或嵌入模型",
+        "为本地开发的聊天、RAG 和智能体应用提供模型后端",
+        "在不把数据发送到外部服务的情况下处理私有内容"
+      ],
+      "what_it_is": "一个在个人电脑上下载、管理和运行开放模型的工具，同时提供命令行和本地 API。",
+      "why_use_it": "它把模型文件、运行参数和服务接口封装起来，降低本地大模型的上手门槛，适合学习、隐私敏感和无需联网的开发环境。"
     },
     {
       "api_url": "https://api.github.com/repos/huggingface/transformers",
@@ -149,7 +163,14 @@
       "star_delta_30d": null,
       "star_delta_7d": null,
       "stars": 166620,
-      "trend_score": null
+      "trend_score": null,
+      "use_cases": [
+        "加载开源大模型制作聊天、分类、翻译或信息抽取应用",
+        "用自己的数据微调文本、视觉或多模态模型",
+        "快速比较不同模型，并把模型接入现有 Python 服务"
+      ],
+      "what_it_is": "一个统一使用文本、图像、音频和多模态预训练模型的 Python 工具库，覆盖模型加载、训练与推理。",
+      "why_use_it": "它把不同模型的接口尽量统一，并连接 Hugging Face 模型生态，适合不想从论文和底层代码重新实现模型的应用开发者。"
     },
     {
       "api_url": "https://api.github.com/repos/langgenius/dify",
@@ -196,7 +217,14 @@
       "star_delta_30d": null,
       "star_delta_7d": null,
       "stars": 157128,
-      "trend_score": null
+      "trend_score": null,
+      "use_cases": [
+        "制作客服、知识库问答和内部业务助手",
+        "用可视化节点编排带判断与工具调用的 AI 工作流",
+        "快速发布原型 API 或网页应用并持续调整效果"
+      ],
+      "what_it_is": "一个可视化的大模型应用开发平台，整合工作流、智能体、知识库、模型管理和应用发布。",
+      "why_use_it": "它让开发者和产品人员用较少代码搭建完整 AI 应用，并把提示词、数据、流程和运行记录放在同一处管理。"
     },
     {
       "api_url": "https://api.github.com/repos/open-webui/open-webui",
@@ -243,7 +271,14 @@
       "star_delta_30d": null,
       "star_delta_7d": null,
       "stars": 153092,
-      "trend_score": null
+      "trend_score": null,
+      "use_cases": [
+        "为本地模型搭建类似常见聊天产品的操作界面",
+        "建立团队内部的多模型访问入口",
+        "体验模型对话、知识库和常用 AI 工具功能"
+      ],
+      "what_it_is": "一个可自行部署的 AI 对话界面，能够连接 Ollama 和兼容常见接口的模型服务。",
+      "why_use_it": "它省去了从零开发聊天前端的工作，让个人或团队更快获得统一的模型入口，并能把界面和数据放在自己控制的环境中。"
     },
     {
       "api_url": "https://api.github.com/repos/langchain-ai/langchain",
@@ -290,7 +325,14 @@
       "star_delta_30d": null,
       "star_delta_7d": null,
       "stars": 147020,
-      "trend_score": null
+      "trend_score": null,
+      "use_cases": [
+        "构建能够调用搜索、数据库或业务接口的智能体",
+        "编排问答、提取、审核等多步骤大模型工作流",
+        "在多个模型提供商之间切换并统一应用接口"
+      ],
+      "what_it_is": "一个用于组合大模型、提示词、工具、检索和智能体流程的应用开发框架。",
+      "why_use_it": "它提供大量模型与外部工具的连接器，适合快速验证包含多个步骤的 AI 应用，并减少为每个供应商重复编写集成代码。"
     },
     {
       "api_url": "https://api.github.com/repos/Comfy-Org/ComfyUI",
@@ -337,7 +379,14 @@
       "star_delta_30d": null,
       "star_delta_7d": null,
       "stars": 134880,
-      "trend_score": null
+      "trend_score": null,
+      "use_cases": [
+        "设计并保存可重复运行的文生图、图生图流程",
+        "组合 LoRA、ControlNet 和各种后处理节点进行创作",
+        "批量生成素材并把工作流接入其他应用"
+      ],
+      "what_it_is": "一个以节点图方式构建生成式图像与视频流程的界面，可细致连接模型、采样器、条件控制和后处理步骤。",
+      "why_use_it": "相比只有提示词输入框的工具，它能把复杂生成过程可视化、保存和复用，适合需要稳定结果与精细控制的创作者和开发者。"
     },
     {
       "api_url": "https://api.github.com/repos/ggml-org/llama.cpp",
@@ -384,7 +433,14 @@
       "star_delta_30d": null,
       "star_delta_7d": null,
       "stars": 129457,
-      "trend_score": null
+      "trend_score": null,
+      "use_cases": [
+        "在电脑上离线运行聊天模型或本地知识库",
+        "把量化模型集成到桌面端、移动端或嵌入式应用",
+        "比较不同量化方式对速度、内存和效果的影响"
+      ],
+      "what_it_is": "一个使用 C/C++ 实现的大模型推理项目，重点支持量化模型以及在个人电脑和边缘设备上运行。",
+      "why_use_it": "它让没有专业服务器的用户也能尝试本地模型，并适合重视离线使用、隐私或低依赖部署的场景。"
     },
     {
       "api_url": "https://api.github.com/repos/browser-use/browser-use",
@@ -431,7 +487,14 @@
       "star_delta_30d": null,
       "star_delta_7d": null,
       "stars": 116213,
-      "trend_score": null
+      "trend_score": null,
+      "use_cases": [
+        "自动查找并整理分散在网页中的公开信息",
+        "在授权范围内填写表单或执行重复的后台操作",
+        "测试网页流程以及研究可操作浏览器的智能体"
+      ],
+      "what_it_is": "一个让 AI 智能体读取网页并操作浏览器的工具，使模型能够点击、输入和完成网页中的多步骤任务。",
+      "why_use_it": "很多网站没有可用 API，只能通过界面操作；它为 AI 应用提供浏览器这一执行入口，适合自动化重复但仍需判断的网页流程。"
     },
     {
       "api_url": "https://api.github.com/repos/pytorch/pytorch",
@@ -478,7 +541,14 @@
       "star_delta_30d": null,
       "star_delta_7d": null,
       "stars": 103272,
-      "trend_score": null
+      "trend_score": null,
+      "use_cases": [
+        "从头训练神经网络或微调已有模型",
+        "实现论文中的新模型、损失函数和训练方法",
+        "构建需要 GPU 加速的视觉、语音或自然语言任务"
+      ],
+      "what_it_is": "一个以 Python 为主要接口的深度学习框架，提供张量计算、自动求导、GPU 加速和神经网络组件。",
+      "why_use_it": "它代码直观、调试方便，研究社区和开源模型采用广泛；当现成 AI 工具不够用时，它让开发者能够训练或修改模型本身。"
     },
     {
       "api_url": "https://api.github.com/repos/vllm-project/vllm",
@@ -525,7 +595,14 @@
       "star_delta_30d": null,
       "star_delta_7d": null,
       "stars": 92648,
-      "trend_score": null
+      "trend_score": null,
+      "use_cases": [
+        "搭建兼容常见调用方式的大模型 API 服务",
+        "为聊天机器人、智能体和 RAG 应用提供共享推理后端",
+        "进行批量生成、并发测试和模型服务性能评估"
+      ],
+      "what_it_is": "一个面向大语言模型的高吞吐推理和服务引擎，可把开源模型封装成供应用调用的接口。",
+      "why_use_it": "当多个用户同时调用模型时，推理速度、显存利用率和并发能力会直接影响成本与体验；vLLM 专门解决这类服务端问题。"
     },
     {
       "api_url": "https://api.github.com/repos/lobehub/lobehub",
@@ -572,7 +649,14 @@
       "star_delta_30d": null,
       "star_delta_7d": null,
       "stars": 82807,
-      "trend_score": null
+      "trend_score": null,
+      "use_cases": [
+        "创建分别负责写作、学习、编程等任务的个人助手",
+        "统一使用和比较不同模型服务",
+        "搭建带知识库与扩展工具的团队 AI 工作空间"
+      ],
+      "what_it_is": "一个面向多模型和智能体使用的开源工作空间，提供对话、知识管理、工具扩展和智能体组织界面。",
+      "why_use_it": "它更接近可直接使用的 AI 工作台，而不是底层开发框架，适合希望集中管理模型、助手和日常任务的个人或团队。"
     },
     {
       "api_url": "https://api.github.com/repos/microsoft/autogen",
@@ -619,7 +703,14 @@
       "star_delta_30d": null,
       "star_delta_7d": null,
       "stars": 61149,
-      "trend_score": null
+      "trend_score": null,
+      "use_cases": [
+        "组合规划者、执行者和审查者完成复杂任务",
+        "构建带人工确认环节的多智能体工作流",
+        "研究智能体之间的对话、协作和任务分工"
+      ],
+      "what_it_is": "一个用于构建智能体应用的编程框架，可让多个具有不同角色、工具和任务的智能体通过消息协作。",
+      "why_use_it": "复杂任务往往需要规划、执行、检查等不同职责；它为这类多角色协作提供结构，而不是把所有步骤塞进一次模型调用。"
     },
     {
       "api_url": "https://api.github.com/repos/run-llama/llama_index",
@@ -666,7 +757,14 @@
       "star_delta_30d": null,
       "star_delta_7d": null,
       "stars": 52310,
-      "trend_score": null
+      "trend_score": null,
+      "use_cases": [
+        "制作面向课程资料、公司文档或个人笔记的知识库问答",
+        "构建 RAG 检索流程和带引用来源的助手",
+        "让智能体查询结构化数据、文件和外部数据源"
+      ],
+      "what_it_is": "一个把文档、数据库等私有数据接入大模型的框架，重点处理数据读取、索引、检索和上下文组织。",
+      "why_use_it": "通用模型不了解用户自己的资料；LlamaIndex 提供现成的数据与检索组件，帮助应用在回答前找到更相关的私有信息。"
     },
     {
       "api_url": "https://api.github.com/repos/huggingface/smolagents",
@@ -713,7 +811,14 @@
       "star_delta_30d": null,
       "star_delta_7d": null,
       "stars": 29480,
-      "trend_score": null
+      "trend_score": null,
+      "use_cases": [
+        "快速制作能够调用 Python 函数或外部工具的智能体",
+        "试验代码智能体、工具调用和不同模型后端",
+        "学习并调试智能体执行过程"
+      ],
+      "what_it_is": "Hugging Face 推出的轻量智能体库，强调用较少的抽象实现工具调用和代码型智能体。",
+      "why_use_it": "它结构相对精简，方便开发者理解智能体如何思考和调用工具，适合原型、小项目或学习，而不必先掌握庞大的框架。"
     }
   ],
   "schema_version": 1,
