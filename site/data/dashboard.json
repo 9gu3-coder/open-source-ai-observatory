@@ -6,7 +6,7 @@
     "stale": 0,
     "succeeded": 15
   },
-  "generated_at": "2026-09-25T03:47:22.242381Z",
+  "generated_at": "2026-09-25T05:44:52.152248Z",
   "latest_date": "2026-09-25",
   "notice": "热度反映关注与活跃变化，不代表项目质量",
   "repositories": [
@@ -16,7 +16,7 @@
       "configured_full_name": "tensorflow/tensorflow",
       "description": "An Open Source Machine Learning Framework for Everyone",
       "display_name": "TensorFlow",
-      "forks": 77285,
+      "forks": 77294,
       "full_name": "tensorflow/tensorflow",
       "issues": [
         {
@@ -40,8 +40,8 @@
       ],
       "language": "C++",
       "license_name": "Apache-2.0",
-      "open_issues": 3323,
-      "pushed_at": "2026-09-25T03:44:51Z",
+      "open_issues": 3318,
+      "pushed_at": "2026-09-25T05:39:43Z",
       "reason": "成熟的机器学习与部署框架",
       "release": {
         "name": "TensorFlow 2.21.0",
@@ -54,7 +54,7 @@
       "stale_reason": null,
       "star_delta_30d": null,
       "star_delta_7d": null,
-      "stars": 200296,
+      "stars": 200298,
       "trend_score": null,
       "use_cases": [
         "使用 Keras 训练分类、预测和推荐模型",
@@ -94,7 +94,7 @@
       ],
       "language": "Go",
       "license_name": "MIT",
-      "open_issues": 4074,
+      "open_issues": 4076,
       "pushed_at": "2026-09-25T02:27:55Z",
       "reason": "本地运行开放模型的常用工具",
       "release": {
@@ -108,7 +108,7 @@
       "stale_reason": null,
       "star_delta_30d": null,
       "star_delta_7d": null,
-      "stars": 181657,
+      "stars": 181659,
       "trend_score": null,
       "use_cases": [
         "在电脑上快速试用不同的开源聊天或嵌入模型",
@@ -124,7 +124,7 @@
       "configured_full_name": "huggingface/transformers",
       "description": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training. ",
       "display_name": "Transformers",
-      "forks": 34667,
+      "forks": 34669,
       "full_name": "huggingface/transformers",
       "issues": [
         {
@@ -148,7 +148,7 @@
       ],
       "language": "Python",
       "license_name": "Apache-2.0",
-      "open_issues": 2390,
+      "open_issues": 2392,
       "pushed_at": "2026-09-25T00:53:11Z",
       "reason": "主流多模态模型定义与推理生态",
       "release": {
@@ -162,7 +162,7 @@
       "stale_reason": null,
       "star_delta_30d": null,
       "star_delta_7d": null,
-      "stars": 166620,
+      "stars": 166623,
       "trend_score": null,
       "use_cases": [
         "加载开源大模型制作聊天、分类、翻译或信息抽取应用",
@@ -178,7 +178,7 @@
       "configured_full_name": "langgenius/dify",
       "description": "Build Agentic workflows, RAG pipelines, with rich AI model and tool support on one collaborative workspace. Deploy on cloud, VPC, or self-hosted, so teams move from prototype to production without rebuilding the stack.",
       "display_name": "Dify",
-      "forks": 24772,
+      "forks": 24775,
       "full_name": "langgenius/dify",
       "issues": [
         {
@@ -202,8 +202,8 @@
       ],
       "language": "TypeScript",
       "license_name": "NOASSERTION",
-      "open_issues": 1093,
-      "pushed_at": "2026-09-25T02:43:27Z",
+      "open_issues": 1094,
+      "pushed_at": "2026-09-25T04:20:42Z",
       "reason": "可视化智能体工作流与 RAG 平台",
       "release": {
         "name": "v1.17.1 - Bug Fixes and Improvements",
@@ -216,7 +216,7 @@
       "stale_reason": null,
       "star_delta_30d": null,
       "star_delta_7d": null,
-      "stars": 157128,
+      "stars": 157143,
       "trend_score": null,
       "use_cases": [
         "制作客服、知识库问答和内部业务助手",
@@ -232,7 +232,7 @@
       "configured_full_name": "open-webui/open-webui",
       "description": "User-friendly AI Interface (Supports Ollama, OpenAI API, ...)",
       "display_name": "Open WebUI",
-      "forks": 22394,
+      "forks": 22395,
       "full_name": "open-webui/open-webui",
       "issues": [
         {
@@ -256,8 +256,8 @@
       ],
       "language": "Python",
       "license_name": "NOASSERTION",
-      "open_issues": 325,
-      "pushed_at": "2026-09-24T19:58:50Z",
+      "open_issues": 312,
+      "pushed_at": "2026-09-25T05:06:56Z",
       "reason": "可自托管的通用 AI 交互界面",
       "release": {
         "name": "v0.11.4",
@@ -270,7 +270,7 @@
       "stale_reason": null,
       "star_delta_30d": null,
       "star_delta_7d": null,
-      "stars": 153092,
+      "stars": 153100,
       "trend_score": null,
       "use_cases": [
         "为本地模型搭建类似常见聊天产品的操作界面",
@@ -324,7 +324,7 @@
       "stale_reason": null,
       "star_delta_30d": null,
       "star_delta_7d": null,
-      "stars": 147020,
+      "stars": 147021,
       "trend_score": null,
       "use_cases": [
         "构建能够调用搜索、数据库或业务接口的智能体",
@@ -340,7 +340,7 @@
       "configured_full_name": "Comfy-Org/ComfyUI",
       "description": "The most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface.",
       "display_name": "ComfyUI",
-      "forks": 15973,
+      "forks": 15975,
       "full_name": "Comfy-Org/ComfyUI",
       "issues": [
         {
@@ -364,8 +364,8 @@
       ],
       "language": "Python",
       "license_name": "GPL-3.0",
-      "open_issues": 4938,
-      "pushed_at": "2026-09-25T03:25:17Z",
+      "open_issues": 4941,
+      "pushed_at": "2026-09-25T04:21:40Z",
       "reason": "节点式生成式图像工作流",
       "release": {
         "name": "v0.37.0",
@@ -378,7 +378,7 @@
       "stale_reason": null,
       "star_delta_30d": null,
       "star_delta_7d": null,
-      "stars": 134880,
+      "stars": 134893,
       "trend_score": null,
       "use_cases": [
         "设计并保存可重复运行的文生图、图生图流程",
@@ -418,8 +418,8 @@
       ],
       "language": "C++",
       "license_name": "MIT",
-      "open_issues": 2526,
-      "pushed_at": "2026-09-25T03:15:34Z",
+      "open_issues": 2527,
+      "pushed_at": "2026-09-25T05:22:44Z",
       "reason": "本地与边缘设备上的轻量模型推理",
       "release": {
         "name": "v0.5.0",
@@ -432,7 +432,7 @@
       "stale_reason": null,
       "star_delta_30d": null,
       "star_delta_7d": null,
-      "stars": 129457,
+      "stars": 129461,
       "trend_score": null,
       "use_cases": [
         "在电脑上离线运行聊天模型或本地知识库",
@@ -448,7 +448,7 @@
       "configured_full_name": "browser-use/browser-use",
       "description": "Agents that use the browser.",
       "display_name": "browser-use",
-      "forks": 12796,
+      "forks": 12797,
       "full_name": "browser-use/browser-use",
       "issues": [
         {
@@ -472,8 +472,8 @@
       ],
       "language": "Python",
       "license_name": "MIT",
-      "open_issues": 492,
-      "pushed_at": "2026-09-24T01:38:47Z",
+      "open_issues": 499,
+      "pushed_at": "2026-09-25T03:56:18Z",
       "reason": "浏览器自动化智能体工具",
       "release": {
         "name": "0.13.10",
@@ -486,7 +486,7 @@
       "stale_reason": null,
       "star_delta_30d": null,
       "star_delta_7d": null,
-      "stars": 116213,
+      "stars": 116220,
       "trend_score": null,
       "use_cases": [
         "自动查找并整理分散在网页中的公开信息",
@@ -502,7 +502,7 @@
       "configured_full_name": "pytorch/pytorch",
       "description": "Tensors and Dynamic neural networks in Python with strong GPU acceleration",
       "display_name": "PyTorch",
-      "forks": 30296,
+      "forks": 30312,
       "full_name": "pytorch/pytorch",
       "issues": [
         {
@@ -527,7 +527,7 @@
       "language": "Python",
       "license_name": "NOASSERTION",
       "open_issues": 17588,
-      "pushed_at": "2026-09-25T03:37:53Z",
+      "pushed_at": "2026-09-25T05:42:32Z",
       "reason": "广泛使用的深度学习框架",
       "release": {
         "name": "PyTorch 2.14.0 Release",
@@ -540,7 +540,7 @@
       "stale_reason": null,
       "star_delta_30d": null,
       "star_delta_7d": null,
-      "stars": 103272,
+      "stars": 103278,
       "trend_score": null,
       "use_cases": [
         "从头训练神经网络或微调已有模型",
@@ -556,7 +556,7 @@
       "configured_full_name": "vllm-project/vllm",
       "description": "A high-throughput and memory-efficient inference and serving engine for LLMs",
       "display_name": "vLLM",
-      "forks": 22639,
+      "forks": 22642,
       "full_name": "vllm-project/vllm",
       "issues": [
         {
@@ -580,8 +580,8 @@
       ],
       "language": "Python",
       "license_name": "Apache-2.0",
-      "open_issues": 8378,
-      "pushed_at": "2026-09-25T03:27:21Z",
+      "open_issues": 8371,
+      "pushed_at": "2026-09-25T05:33:37Z",
       "reason": "高吞吐大模型推理与服务",
       "release": {
         "name": "v0.30.0",
@@ -594,7 +594,7 @@
       "stale_reason": null,
       "star_delta_30d": null,
       "star_delta_7d": null,
-      "stars": 92648,
+      "stars": 92651,
       "trend_score": null,
       "use_cases": [
         "搭建兼容常见调用方式的大模型 API 服务",
@@ -634,8 +634,8 @@
       ],
       "language": "TypeScript",
       "license_name": "NOASSERTION",
-      "open_issues": 974,
-      "pushed_at": "2026-09-25T03:46:41Z",
+      "open_issues": 976,
+      "pushed_at": "2026-09-25T05:25:22Z",
       "reason": "智能体组织、运行与交互平台",
       "release": {
         "name": "🚀 Release v2.2.18",
@@ -648,7 +648,7 @@
       "stale_reason": null,
       "star_delta_30d": null,
       "star_delta_7d": null,
-      "stars": 82807,
+      "stars": 82810,
       "trend_score": null,
       "use_cases": [
         "创建分别负责写作、学习、编程等任务的个人助手",
@@ -668,7 +668,7 @@
       "full_name": "microsoft/autogen",
       "issues": [
         {
-          "comments": 392,
+          "comments": 393,
           "number": 7353,
           "title": "Feature: Cryptographic action receipts for enterprise agent governance (AAR)",
           "url": "https://github.com/microsoft/autogen/issues/7353"
@@ -702,7 +702,7 @@
       "stale_reason": null,
       "star_delta_30d": null,
       "star_delta_7d": null,
-      "stars": 61149,
+      "stars": 61148,
       "trend_score": null,
       "use_cases": [
         "组合规划者、执行者和审查者完成复杂任务",
@@ -742,8 +742,8 @@
       ],
       "language": "Python",
       "license_name": "MIT",
-      "open_issues": 855,
-      "pushed_at": "2026-09-25T02:52:56Z",
+      "open_issues": 852,
+      "pushed_at": "2026-09-25T05:06:00Z",
       "reason": "面向数据与文档的大模型应用框架",
       "release": {
         "name": "v0.14.25",
@@ -756,7 +756,7 @@
       "stale_reason": null,
       "star_delta_30d": null,
       "star_delta_7d": null,
-      "stars": 52310,
+      "stars": 52311,
       "trend_score": null,
       "use_cases": [
         "制作面向课程资料、公司文档或个人笔记的知识库问答",
@@ -810,7 +810,7 @@
       "stale_reason": null,
       "star_delta_30d": null,
       "star_delta_7d": null,
-      "stars": 29480,
+      "stars": 29481,
       "trend_score": null,
       "use_cases": [
         "快速制作能够调用 Python 函数或外部工具的智能体",
