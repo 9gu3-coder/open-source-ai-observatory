@@ -27,6 +27,22 @@ function link(label, href, className = "") {
   return anchor;
 }
 
+function displayValue(value, fallback = "暂无") {
+  return value === null || value === undefined || value === "" ? fallback : String(value);
+}
+
+function formatDate(value) {
+  if (!value) return "暂无";
+  const parsed = new Date(value);
+  return Number.isNaN(parsed.getTime()) ? "暂无" : parsed.toLocaleString("zh-CN", { hour12: false });
+}
+
+function detailMetric(label, value) {
+  const wrapper = node("div", "detail-metric");
+  wrapper.append(node("dt", "", label), node("dd", "", value));
+  return wrapper;
+}
+
 function showDetails(repo) {
   const dialog = byId("repo-dialog");
   const content = byId("dialog-content");
@@ -36,6 +52,21 @@ function showDetails(repo) {
   content.append(node("p", "category", repo.category), title, node("p", "repo-name", repo.full_name));
   content.append(node("p", "description", repo.description || "该项目暂未提供简介。"));
   content.append(link("查看 GitHub 原始页面 ↗", repo.source_url, "source-button"));
+
+  const metrics = node("dl", "detail-metrics");
+  const delta30 = repo.star_delta_30d == null
+    ? "数据积累中"
+    : `${repo.star_delta_30d >= 0 ? "+" : ""}${repo.star_delta_30d}`;
+  metrics.append(
+    detailMetric("Stars", formatNumber(repo.stars)),
+    detailMetric("Forks", formatNumber(repo.forks)),
+    detailMetric("开放 Issue", formatNumber(repo.open_issues)),
+    detailMetric("主要语言", displayValue(repo.language)),
+    detailMetric("许可证", displayValue(repo.license_name)),
+    detailMetric("最近推送", formatDate(repo.pushed_at)),
+    detailMetric("30 日变化", delta30),
+  );
+  content.append(metrics);
 
   const releaseTitle = node("h3", "", "最新 Release");
   const release = repo.release
@@ -171,4 +202,3 @@ byId("search-input").addEventListener("input", (event) => { state.query = event.
 byId("category-filter").addEventListener("change", (event) => { state.category = event.target.value; renderRepositories(); });
 byId("repo-dialog").querySelector(".dialog-close").addEventListener("click", () => byId("repo-dialog").close());
 start();
-

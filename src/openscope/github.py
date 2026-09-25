@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import time
 from collections.abc import Callable
+from datetime import datetime
 from typing import Any, Never, cast
 
 import httpx
@@ -91,6 +92,27 @@ class GitHubClient:
         value = payload.get(field)
         return value if isinstance(value, int) and not isinstance(value, bool) else cls._bad(field)
 
+    @classmethod
+    def _nonnegative_integer(cls, payload: dict[str, Any], field: str) -> int:
+        value = cls._integer(payload, field)
+        return value if value >= 0 else cls._bad(field)
+
+    @classmethod
+    def _positive_integer(cls, payload: dict[str, Any], field: str) -> int:
+        value = cls._integer(payload, field)
+        return value if value > 0 else cls._bad(field)
+
+    @classmethod
+    def _timestamp_text(cls, payload: dict[str, Any], field: str) -> str:
+        value = cls._text(payload, field)
+        try:
+            parsed = datetime.fromisoformat(value.replace("Z", "+00:00"))
+        except ValueError:
+            return cls._bad(field)
+        if parsed.tzinfo is None:
+            return cls._bad(field)
+        return value
+
     def _parse_release(self, response: httpx.Response | None) -> ReleaseSnapshot | None:
         if response is None:
             return None
@@ -104,10 +126,10 @@ class GitHubClient:
             tag_name=self._text(payload, "tag_name"),
             name=name,
             url=self._text(payload, "html_url"),
-            published_at=self._text(payload, "published_at"),
+            published_at=self._timestamp_text(payload, "published_at"),
         )
 
-    def _parse_issues(self, response: httpx.Response) -> tuple[IssueSnapshot, ...]:
+    def _parse_issue_page(self, response: httpx.Response) -> list[IssueSnapshot]:
         raw_items = cast(list[Any], self._json(response, list))
         issues: list[IssueSnapshot] = []
         for raw in raw_items:
@@ -118,14 +140,30 @@ class GitHubClient:
                 continue
             issues.append(
                 IssueSnapshot(
-                    number=self._integer(item, "number"),
+                    number=self._positive_integer(item, "number"),
                     title=self._text(item, "title"),
                     url=self._text(item, "html_url"),
-                    comments=self._integer(item, "comments"),
+                    comments=self._nonnegative_integer(item, "comments"),
                 )
             )
-        issues.sort(key=lambda item: (-item.comments, item.number))
-        return tuple(issues[:3])
+        return issues
+
+    def _fetch_issues(self, url: str) -> tuple[IssueSnapshot, ...]:
+        issues: dict[int, IssueSnapshot] = {}
+        visited: set[str] = set()
+        next_url: str | None = url
+        for _ in range(10):
+            if next_url is None or next_url in visited or len(issues) >= 3:
+                break
+            visited.add(next_url)
+            response = self._request(next_url)
+            assert response is not None
+            for issue in self._parse_issue_page(response):
+                issues[issue.number] = issue
+            next_link = response.links.get("next")
+            next_url = next_link.get("url") if next_link else None
+        ordered = sorted(issues.values(), key=lambda item: (-item.comments, item.number))
+        return tuple(ordered[:3])
 
     def fetch_repo(self, config: RepoConfig) -> RepoSnapshot:
         """Fetch and normalize one configured repository."""
@@ -153,10 +191,9 @@ class GitHubClient:
             self._bad("language")
 
         release_response = self._request(f"{base}/releases/latest", allow_404=True)
-        issues_response = self._request(
-            f"{base}/issues?state=open&sort=comments&direction=desc&per_page=20"
+        issues = self._fetch_issues(
+            f"{base}/issues?state=open&sort=comments&direction=desc&per_page=100"
         )
-        assert issues_response is not None
 
         return RepoSnapshot(
             configured_full_name=config.full_name,
@@ -167,13 +204,12 @@ class GitHubClient:
             source_url=self._text(payload, "html_url"),
             api_url=self._text(payload, "url"),
             description=description,
-            stars=self._integer(payload, "stargazers_count"),
-            forks=self._integer(payload, "forks_count"),
-            open_issues=self._integer(payload, "open_issues_count"),
+            stars=self._nonnegative_integer(payload, "stargazers_count"),
+            forks=self._nonnegative_integer(payload, "forks_count"),
+            open_issues=self._nonnegative_integer(payload, "open_issues_count"),
             language=language,
             license_name=license_name,
-            pushed_at=self._text(payload, "pushed_at"),
+            pushed_at=self._timestamp_text(payload, "pushed_at"),
             release=self._parse_release(release_response),
-            issues=self._parse_issues(issues_response),
+            issues=issues,
         )
-

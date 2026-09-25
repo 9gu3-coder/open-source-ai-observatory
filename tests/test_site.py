@@ -71,6 +71,17 @@ def test_shipped_site_exposes_required_accessible_surfaces() -> None:
     assert "source_url" in script
     assert "暂无 Release" in script
     assert "暂无高讨论度 Issue" in script
+    for field in [
+        "forks",
+        "open_issues",
+        "language",
+        "license_name",
+        "pushed_at",
+        "star_delta_30d",
+    ]:
+        assert field in script
+    for label in ["Forks", "开放 Issue", "主要语言", "许可证", "最近推送", "30 日变化"]:
+        assert label in script
     assert "热度反映关注与活跃变化，不代表项目质量" in html
 
 

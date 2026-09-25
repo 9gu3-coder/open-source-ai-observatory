@@ -167,7 +167,12 @@ def build_dashboard(history: dict[str, Any] | None) -> dict[str, Any]:
         repositories.append(record)
 
     if status == "ready":
-        by_name = {item["configured_full_name"]: item for item in repositories}
+        by_name = {
+            item["configured_full_name"]: item
+            for item in repositories
+            if isinstance(item["star_delta_7d"], int)
+            and isinstance(item["star_delta_30d"], int)
+        }
         measures = {
             "delta_7": {name: float(item["star_delta_7d"]) for name, item in by_name.items()},
             "delta_30": {name: float(item["star_delta_30d"]) for name, item in by_name.items()},

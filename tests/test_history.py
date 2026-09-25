@@ -147,3 +147,41 @@ def test_invalid_history_json_is_rejected_without_changing_file(tmp_path: Path) 
         load_history(path)
 
     assert path.read_bytes() == original
+
+
+def test_new_repository_accumulates_independently_after_global_history_is_ready() -> None:
+    history = None
+    start = date(2026, 1, 1)
+    for offset in range(30):
+        records = [repo("old/old", 100 + offset)]
+        if offset == 29:
+            records.append(repo("new/new", 10))
+        history = update_history(
+            history,
+            records,
+            (start + timedelta(days=offset)).isoformat(),
+        )
+
+    first_dashboard = build_dashboard(history)
+    first = {
+        item["configured_full_name"]: item
+        for item in first_dashboard["repositories"]
+    }
+    assert first_dashboard["status"] == "ready"
+    assert first["old/old"]["trend_score"] == 100.0
+    assert first["new/new"]["star_delta_7d"] is None
+    assert first["new/new"]["star_delta_30d"] is None
+    assert first["new/new"]["trend_score"] is None
+
+    for offset in range(30, 59):
+        history = update_history(
+            history,
+            [repo("old/old", 100 + offset), repo("new/new", 10 + offset - 29)],
+            (start + timedelta(days=offset)).isoformat(),
+        )
+    mature = {
+        item["configured_full_name"]: item
+        for item in build_dashboard(history)["repositories"]
+    }
+    assert mature["new/new"]["star_delta_30d"] == 29
+    assert mature["new/new"]["trend_score"] is not None

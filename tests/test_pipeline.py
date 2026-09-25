@@ -2,9 +2,11 @@ import json
 from datetime import UTC, datetime
 from pathlib import Path
 
+import httpx
 import pytest
 
 from openscope.config import RepoConfig, load_repos
+from openscope.github import GitHubClient
 from openscope.history import update_history
 from openscope.models import RepoSnapshot
 from openscope.pipeline import FailureThresholdExceeded, run_pipeline
@@ -126,3 +128,46 @@ def test_successful_pipeline_writes_dashboard_and_weekly_report(tmp_path: Path) 
     )
     assert result.report_path.name == "2026-W39.md"
     assert "OpenScope AI 周报" in result.report_path.read_text(encoding="utf-8")
+
+
+def test_malformed_github_timestamp_becomes_stale_repository_failure(tmp_path: Path) -> None:
+    repos = load_repos(Path("config/repos.yaml"))
+    broken_name = repos[0].full_name
+    history_path = tmp_path / "data/history.json"
+    site_dir = tmp_path / "site"
+    write_prior_history(history_path, repos)
+
+    def handler(request: httpx.Request) -> httpx.Response:
+        path = request.url.path
+        if path.endswith("/releases/latest"):
+            return httpx.Response(404, request=request)
+        if path.endswith("/issues"):
+            return httpx.Response(200, json=[], request=request)
+        parts = path.strip("/").split("/")
+        full_name = "/".join(parts[1:3])
+        config = next(item for item in repos if item.full_name == full_name)
+        payload = snapshot(config, stars=200).to_dict()
+        payload.update(
+            {
+                "html_url": payload.pop("source_url"),
+                "url": payload.pop("api_url"),
+                "stargazers_count": payload.pop("stars"),
+                "forks_count": payload.pop("forks"),
+                "open_issues_count": payload.pop("open_issues"),
+                "license": {"spdx_id": payload.pop("license_name")},
+            }
+        )
+        if full_name == broken_name:
+            payload["pushed_at"] = "invalid-time"
+        return httpx.Response(200, json=payload, request=request)
+
+    client = GitHubClient(client=httpx.Client(transport=httpx.MockTransport(handler)))
+    result = run_pipeline(
+        Path("config/repos.yaml"), history_path, site_dir, client, NOW
+    )
+    dashboard = json.loads((site_dir / "data/dashboard.json").read_text(encoding="utf-8"))
+    by_name = {item["configured_full_name"]: item for item in dashboard["repositories"]}
+
+    assert result.failed == 1
+    assert result.stale == 1
+    assert by_name[broken_name]["stale"] is True

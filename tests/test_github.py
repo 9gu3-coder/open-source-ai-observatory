@@ -133,9 +133,13 @@ def test_canonical_identity_is_recorded_after_repository_redirect() -> None:
     "broken",
     [
         {"stargazers_count": "many"},
+        {"stargazers_count": -1},
+        {"forks_count": -1},
+        {"open_issues_count": -1},
         {"full_name": None},
         {"license": "MIT"},
         {"pushed_at": 123},
+        {"pushed_at": "not-a-timestamp"},
     ],
 )
 def test_malformed_required_payload_raises_github_api_error(broken: dict[str, object]) -> None:
@@ -149,3 +153,45 @@ def test_malformed_required_payload_raises_github_api_error(broken: dict[str, ob
     with pytest.raises(GitHubAPIError, match="响应格式"):
         client_for(handler).fetch_repo(REPO)
 
+
+def test_malformed_release_timestamp_raises_github_api_error() -> None:
+    def handler(request: httpx.Request) -> httpx.Response:
+        if request.url.path.endswith("/releases/latest"):
+            broken = release()
+            broken["published_at"] = "yesterday"
+            return httpx.Response(200, json=broken, request=request)
+        if request.url.path.endswith("/issues"):
+            return httpx.Response(200, json=[], request=request)
+        return httpx.Response(200, json=metadata(), request=request)
+
+    with pytest.raises(GitHubAPIError, match="published_at"):
+        client_for(handler).fetch_repo(REPO)
+
+
+def test_issue_collection_follows_pagination_until_three_non_pull_requests() -> None:
+    requested_pages: list[str | None] = []
+
+    def handler(request: httpx.Request) -> httpx.Response:
+        if request.url.path.endswith("/releases/latest"):
+            return httpx.Response(404, request=request)
+        if request.url.path.endswith("/issues"):
+            requested_pages.append(request.url.params.get("page"))
+            if request.url.params.get("page") == "2":
+                return httpx.Response(
+                    200,
+                    json=[issue(21, 30), issue(22, 20), issue(23, 10)],
+                    request=request,
+                )
+            next_url = "https://api.github.com/repos/owner/repo/issues?page=2"
+            return httpx.Response(
+                200,
+                json=[issue(number, 100 - number, pull_request=True) for number in range(1, 21)],
+                headers={"Link": f'<{next_url}>; rel="next"'},
+                request=request,
+            )
+        return httpx.Response(200, json=metadata(), request=request)
+
+    snapshot = client_for(handler).fetch_repo(REPO)
+
+    assert requested_pages == [None, "2"]
+    assert [item.number for item in snapshot.issues] == [21, 22, 23]
