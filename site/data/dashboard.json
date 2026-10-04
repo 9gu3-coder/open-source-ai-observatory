@@ -6,8 +6,8 @@
     "stale": 0,
     "succeeded": 15
   },
-  "generated_at": "2026-10-03T01:15:20.008089Z",
-  "latest_date": "2026-10-03",
+  "generated_at": "2026-10-04T01:43:36.954636Z",
+  "latest_date": "2026-10-04",
   "notice": "热度反映关注与活跃变化，不代表项目质量",
   "repositories": [
     {
@@ -16,7 +16,7 @@
       "configured_full_name": "tensorflow/tensorflow",
       "description": "An Open Source Machine Learning Framework for Everyone",
       "display_name": "TensorFlow",
-      "forks": 78120,
+      "forks": 78204,
       "full_name": "tensorflow/tensorflow",
       "issues": [
         {
@@ -40,8 +40,8 @@
       ],
       "language": "C++",
       "license_name": "Apache-2.0",
-      "open_issues": 3242,
-      "pushed_at": "2026-10-03T01:07:19Z",
+      "open_issues": 3259,
+      "pushed_at": "2026-10-03T22:44:20Z",
       "reason": "成熟的机器学习与部署框架",
       "release": {
         "name": "TensorFlow 2.21.0",
@@ -53,8 +53,8 @@
       "stale": false,
       "stale_reason": null,
       "star_delta_30d": null,
-      "star_delta_7d": 213,
-      "stars": 200667,
+      "star_delta_7d": 109,
+      "stars": 200681,
       "trend_score": null,
       "use_cases": [
         "使用 Keras 训练分类、预测和推荐模型",
@@ -70,7 +70,7 @@
       "configured_full_name": "ollama/ollama",
       "description": "Get up and running with Kimi, GLM, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models.",
       "display_name": "Ollama",
-      "forks": 18085,
+      "forks": 18096,
       "full_name": "ollama/ollama",
       "issues": [
         {
@@ -94,8 +94,8 @@
       ],
       "language": "Go",
       "license_name": "MIT",
-      "open_issues": 4156,
-      "pushed_at": "2026-10-02T18:52:29Z",
+      "open_issues": 4166,
+      "pushed_at": "2026-10-04T00:48:09Z",
       "reason": "本地运行开放模型的常用工具",
       "release": {
         "name": "v0.35.1",
@@ -107,8 +107,8 @@
       "stale": false,
       "stale_reason": null,
       "star_delta_30d": null,
-      "star_delta_7d": 293,
-      "stars": 182068,
+      "star_delta_7d": 310,
+      "stars": 182127,
       "trend_score": null,
       "use_cases": [
         "在电脑上快速试用不同的开源聊天或嵌入模型",
@@ -124,7 +124,7 @@
       "configured_full_name": "huggingface/transformers",
       "description": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training. ",
       "display_name": "Transformers",
-      "forks": 34740,
+      "forks": 34742,
       "full_name": "huggingface/transformers",
       "issues": [
         {
@@ -148,8 +148,8 @@
       ],
       "language": "Python",
       "license_name": "Apache-2.0",
-      "open_issues": 2361,
-      "pushed_at": "2026-10-03T00:36:34Z",
+      "open_issues": 2365,
+      "pushed_at": "2026-10-04T01:40:39Z",
       "reason": "主流多模态模型定义与推理生态",
       "release": {
         "name": "Release 5.18.0",
@@ -161,8 +161,8 @@
       "stale": false,
       "stale_reason": null,
       "star_delta_30d": null,
-      "star_delta_7d": 205,
-      "stars": 166905,
+      "star_delta_7d": 193,
+      "stars": 166927,
       "trend_score": null,
       "use_cases": [
         "加载开源大模型制作聊天、分类、翻译或信息抽取应用",
@@ -178,7 +178,7 @@
       "configured_full_name": "langgenius/dify",
       "description": "Build Agentic workflows, RAG pipelines, with rich AI model and tool support on one collaborative workspace. Deploy on cloud, VPC, or self-hosted, so teams move from prototype to production without rebuilding the stack.",
       "display_name": "Dify",
-      "forks": 24889,
+      "forks": 24899,
       "full_name": "langgenius/dify",
       "issues": [
         {
@@ -202,8 +202,8 @@
       ],
       "language": "TypeScript",
       "license_name": "NOASSERTION",
-      "open_issues": 977,
-      "pushed_at": "2026-10-03T01:13:49Z",
+      "open_issues": 993,
+      "pushed_at": "2026-10-03T15:55:10Z",
       "reason": "可视化智能体工作流与 RAG 平台",
       "release": {
         "name": "v1.17.1 - Bug Fixes and Improvements",
@@ -215,8 +215,8 @@
       "stale": false,
       "stale_reason": null,
       "star_delta_30d": null,
-      "star_delta_7d": 443,
-      "stars": 157731,
+      "star_delta_7d": 439,
+      "stars": 157783,
       "trend_score": null,
       "use_cases": [
         "制作客服、知识库问答和内部业务助手",
@@ -232,7 +232,7 @@
       "configured_full_name": "open-webui/open-webui",
       "description": "User-friendly AI Interface (Supports Ollama, OpenAI API, ...)",
       "display_name": "Open WebUI",
-      "forks": 22486,
+      "forks": 22503,
       "full_name": "open-webui/open-webui",
       "issues": [
         {
@@ -256,8 +256,8 @@
       ],
       "language": "Python",
       "license_name": "NOASSERTION",
-      "open_issues": 276,
-      "pushed_at": "2026-10-02T04:50:55Z",
+      "open_issues": 281,
+      "pushed_at": "2026-10-03T13:06:04Z",
       "reason": "可自托管的通用 AI 交互界面",
       "release": {
         "name": "v0.11.4",
@@ -269,8 +269,8 @@
       "stale": false,
       "stale_reason": null,
       "star_delta_30d": null,
-      "star_delta_7d": 547,
-      "stars": 153815,
+      "star_delta_7d": 514,
+      "stars": 153890,
       "trend_score": null,
       "use_cases": [
         "为本地模型搭建类似常见聊天产品的操作界面",
@@ -286,7 +286,7 @@
       "configured_full_name": "langchain-ai/langchain",
       "description": "The agent engineering platform.",
       "display_name": "LangChain",
-      "forks": 24686,
+      "forks": 24695,
       "full_name": "langchain-ai/langchain",
       "issues": [
         {
@@ -310,8 +310,8 @@
       ],
       "language": "Python",
       "license_name": "MIT",
-      "open_issues": 606,
-      "pushed_at": "2026-10-02T22:57:27Z",
+      "open_issues": 617,
+      "pushed_at": "2026-10-03T08:31:42Z",
       "reason": "智能体与大模型应用编排平台",
       "release": {
         "name": "langchain-core==1.6.6",
@@ -323,8 +323,8 @@
       "stale": false,
       "stale_reason": null,
       "star_delta_30d": null,
-      "star_delta_7d": 270,
-      "stars": 147389,
+      "star_delta_7d": 251,
+      "stars": 147415,
       "trend_score": null,
       "use_cases": [
         "构建能够调用搜索、数据库或业务接口的智能体",
@@ -340,7 +340,7 @@
       "configured_full_name": "Comfy-Org/ComfyUI",
       "description": "The most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface. The fastest local inference engine in the world.",
       "display_name": "ComfyUI",
-      "forks": 16112,
+      "forks": 16122,
       "full_name": "Comfy-Org/ComfyUI",
       "issues": [
         {
@@ -364,8 +364,8 @@
       ],
       "language": "Python",
       "license_name": "GPL-3.0",
-      "open_issues": 5033,
-      "pushed_at": "2026-10-03T01:13:01Z",
+      "open_issues": 5042,
+      "pushed_at": "2026-10-04T01:36:10Z",
       "reason": "节点式生成式图像工作流",
       "release": {
         "name": "v0.38.0",
@@ -377,8 +377,8 @@
       "stale": false,
       "stale_reason": null,
       "star_delta_30d": null,
-      "star_delta_7d": 777,
-      "stars": 135891,
+      "star_delta_7d": 801,
+      "stars": 136019,
       "trend_score": null,
       "use_cases": [
         "设计并保存可重复运行的文生图、图生图流程",
@@ -394,7 +394,7 @@
       "configured_full_name": "ggml-org/llama.cpp",
       "description": "LLM inference in C/C++",
       "display_name": "llama.cpp",
-      "forks": 24007,
+      "forks": 24047,
       "full_name": "ggml-org/llama.cpp",
       "issues": [
         {
@@ -418,8 +418,8 @@
       ],
       "language": "C++",
       "license_name": "MIT",
-      "open_issues": 2521,
-      "pushed_at": "2026-10-03T01:03:46Z",
+      "open_issues": 2542,
+      "pushed_at": "2026-10-04T00:34:49Z",
       "reason": "本地与边缘设备上的轻量模型推理",
       "release": {
         "name": "v0.5.0",
@@ -431,8 +431,8 @@
       "stale": false,
       "stale_reason": null,
       "star_delta_30d": null,
-      "star_delta_7d": 554,
-      "stars": 130169,
+      "star_delta_7d": 519,
+      "stars": 130233,
       "trend_score": null,
       "use_cases": [
         "在电脑上离线运行聊天模型或本地知识库",
@@ -448,7 +448,7 @@
       "configured_full_name": "browser-use/browser-use",
       "description": "Agents that use the browser.",
       "display_name": "browser-use",
-      "forks": 12910,
+      "forks": 12923,
       "full_name": "browser-use/browser-use",
       "issues": [
         {
@@ -472,7 +472,7 @@
       ],
       "language": "Python",
       "license_name": "MIT",
-      "open_issues": 533,
+      "open_issues": 539,
       "pushed_at": "2026-10-03T00:06:08Z",
       "reason": "浏览器自动化智能体工具",
       "release": {
@@ -485,8 +485,8 @@
       "stale": false,
       "stale_reason": null,
       "star_delta_30d": null,
-      "star_delta_7d": 601,
-      "stars": 117013,
+      "star_delta_7d": 558,
+      "stars": 117075,
       "trend_score": null,
       "use_cases": [
         "自动查找并整理分散在网页中的公开信息",
@@ -502,7 +502,7 @@
       "configured_full_name": "pytorch/pytorch",
       "description": "Tensors and Dynamic neural networks in Python with strong GPU acceleration",
       "display_name": "PyTorch",
-      "forks": 31159,
+      "forks": 31261,
       "full_name": "pytorch/pytorch",
       "issues": [
         {
@@ -526,8 +526,8 @@
       ],
       "language": "Python",
       "license_name": "NOASSERTION",
-      "open_issues": 17599,
-      "pushed_at": "2026-10-03T01:08:51Z",
+      "open_issues": 17601,
+      "pushed_at": "2026-10-04T01:37:50Z",
       "reason": "广泛使用的深度学习框架",
       "release": {
         "name": "PyTorch 2.14.1 Release",
@@ -539,8 +539,8 @@
       "stale": false,
       "stale_reason": null,
       "star_delta_30d": null,
-      "star_delta_7d": 251,
-      "stars": 103627,
+      "star_delta_7d": 277,
+      "stars": 103699,
       "trend_score": null,
       "use_cases": [
         "从头训练神经网络或微调已有模型",
@@ -556,7 +556,7 @@
       "configured_full_name": "vllm-project/vllm",
       "description": "A high-throughput and memory-efficient inference and serving engine for LLMs",
       "display_name": "vLLM",
-      "forks": 22936,
+      "forks": 22965,
       "full_name": "vllm-project/vllm",
       "issues": [
         {
@@ -580,8 +580,8 @@
       ],
       "language": "Python",
       "license_name": "Apache-2.0",
-      "open_issues": 8475,
-      "pushed_at": "2026-10-03T01:00:51Z",
+      "open_issues": 8502,
+      "pushed_at": "2026-10-04T01:13:11Z",
       "reason": "高吞吐大模型推理与服务",
       "release": {
         "name": "v0.30.0",
@@ -593,8 +593,8 @@
       "stale": false,
       "stale_reason": null,
       "star_delta_30d": null,
-      "star_delta_7d": 354,
-      "stars": 93082,
+      "star_delta_7d": 325,
+      "stars": 93129,
       "trend_score": null,
       "use_cases": [
         "搭建兼容常见调用方式的大模型 API 服务",
@@ -610,7 +610,7 @@
       "configured_full_name": "lobehub/lobehub",
       "description": "🤯 LobeHub is your Chief Agent Operator, organizing your agents into 7×24 operations by hiring, scheduling, and reporting on your entire AI team.",
       "display_name": "LobeHub",
-      "forks": 15950,
+      "forks": 15954,
       "full_name": "lobehub/lobehub",
       "issues": [
         {
@@ -634,8 +634,8 @@
       ],
       "language": "TypeScript",
       "license_name": "NOASSERTION",
-      "open_issues": 1000,
-      "pushed_at": "2026-10-02T23:21:30Z",
+      "open_issues": 1013,
+      "pushed_at": "2026-10-04T01:21:01Z",
       "reason": "智能体组织、运行与交互平台",
       "release": {
         "name": "🚀 Release v2.2.18",
@@ -647,8 +647,8 @@
       "stale": false,
       "stale_reason": null,
       "star_delta_30d": null,
-      "star_delta_7d": 112,
-      "stars": 82950,
+      "star_delta_7d": 108,
+      "stars": 82968,
       "trend_score": null,
       "use_cases": [
         "创建分别负责写作、学习、编程等任务的个人助手",
@@ -664,7 +664,7 @@
       "configured_full_name": "microsoft/autogen",
       "description": "A programming framework for agentic AI",
       "display_name": "AutoGen",
-      "forks": 9276,
+      "forks": 9280,
       "full_name": "microsoft/autogen",
       "issues": [
         {
@@ -688,7 +688,7 @@
       ],
       "language": "Python",
       "license_name": "CC-BY-4.0",
-      "open_issues": 1109,
+      "open_issues": 1104,
       "pushed_at": "2026-04-15T11:59:09Z",
       "reason": "多智能体应用编程框架",
       "release": {
@@ -701,8 +701,8 @@
       "stale": false,
       "stale_reason": null,
       "star_delta_30d": null,
-      "star_delta_7d": 69,
-      "stars": 61248,
+      "star_delta_7d": 59,
+      "stars": 61250,
       "trend_score": null,
       "use_cases": [
         "组合规划者、执行者和审查者完成复杂任务",
@@ -718,7 +718,7 @@
       "configured_full_name": "run-llama/llama_index",
       "description": "LlamaIndex is the document processing platform for AI",
       "display_name": "LlamaIndex",
-      "forks": 8267,
+      "forks": 8274,
       "full_name": "run-llama/llama_index",
       "issues": [
         {
@@ -742,7 +742,7 @@
       ],
       "language": "Python",
       "license_name": "MIT",
-      "open_issues": 848,
+      "open_issues": 855,
       "pushed_at": "2026-10-01T18:39:47Z",
       "reason": "面向数据与文档的大模型应用框架",
       "release": {
@@ -755,8 +755,8 @@
       "stale": false,
       "stale_reason": null,
       "star_delta_30d": null,
-      "star_delta_7d": 61,
-      "stars": 52386,
+      "star_delta_7d": 67,
+      "stars": 52398,
       "trend_score": null,
       "use_cases": [
         "制作面向课程资料、公司文档或个人笔记的知识库问答",
@@ -772,7 +772,7 @@
       "configured_full_name": "huggingface/smolagents",
       "description": "🤗 smolagents: a barebones library for agents that think in code.",
       "display_name": "smolagents",
-      "forks": 3036,
+      "forks": 3042,
       "full_name": "huggingface/smolagents",
       "issues": [
         {
@@ -796,7 +796,7 @@
       ],
       "language": "Python",
       "license_name": "Apache-2.0",
-      "open_issues": 875,
+      "open_issues": 877,
       "pushed_at": "2026-09-30T05:07:25Z",
       "reason": "轻量代码型智能体库",
       "release": {
@@ -809,8 +809,8 @@
       "stale": false,
       "stale_reason": null,
       "star_delta_30d": null,
-      "star_delta_7d": 151,
-      "stars": 29656,
+      "star_delta_7d": 141,
+      "stars": 29666,
       "trend_score": null,
       "use_cases": [
         "快速制作能够调用 Python 函数或外部工具的智能体",
@@ -822,7 +822,7 @@
     }
   ],
   "schema_version": 1,
-  "snapshot_days": 9,
+  "snapshot_days": 10,
   "status": "partial",
   "weekly_report": {
     "path": "reports/2026-W40.md",
