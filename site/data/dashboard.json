@@ -6,71 +6,17 @@
     "stale": 0,
     "succeeded": 15
   },
-  "generated_at": "2026-11-27T04:21:22.259354Z",
-  "latest_date": "2026-11-27",
+  "generated_at": "2026-11-28T04:01:48.390806Z",
+  "latest_date": "2026-11-28",
   "notice": "热度反映关注与活跃变化，不代表项目质量",
   "repositories": [
-    {
-      "api_url": "https://api.github.com/repos/ggml-org/llama.cpp",
-      "category": "推理引擎",
-      "configured_full_name": "ggml-org/llama.cpp",
-      "description": "LLM inference in C/C++",
-      "display_name": "llama.cpp",
-      "forks": 26150,
-      "full_name": "ggml-org/llama.cpp",
-      "issues": [
-        {
-          "comments": 83,
-          "number": 10528,
-          "title": "Misc. bug: Inconsistent Vulkan segfault",
-          "url": "https://github.com/ggml-org/llama.cpp/issues/10528"
-        },
-        {
-          "comments": 58,
-          "number": 10982,
-          "title": "Research: Performance differences between Metal (macOS) and Vulkan (Linux)",
-          "url": "https://github.com/ggml-org/llama.cpp/issues/10982"
-        },
-        {
-          "comments": 56,
-          "number": 14909,
-          "title": "Feature Request: Implement missing ops from backends",
-          "url": "https://github.com/ggml-org/llama.cpp/issues/14909"
-        }
-      ],
-      "language": "C++",
-      "license_name": "MIT",
-      "open_issues": 2650,
-      "pushed_at": "2026-11-27T04:20:28Z",
-      "reason": "本地与边缘设备上的轻量模型推理",
-      "release": {
-        "name": "v1.1.0",
-        "published_at": "2026-11-26T09:16:47Z",
-        "tag_name": "v1.1.0",
-        "url": "https://github.com/ggml-org/llama.cpp/releases/tag/v1.1.0"
-      },
-      "source_url": "https://github.com/ggml-org/llama.cpp",
-      "stale": false,
-      "stale_reason": null,
-      "star_delta_30d": 3754,
-      "star_delta_7d": 551,
-      "stars": 136428,
-      "trend_score": 90.7,
-      "use_cases": [
-        "在电脑上离线运行聊天模型或本地知识库",
-        "把量化模型集成到桌面端、移动端或嵌入式应用",
-        "比较不同量化方式对速度、内存和效果的影响"
-      ],
-      "what_it_is": "一个使用 C/C++ 实现的大模型推理项目，重点支持量化模型以及在个人电脑和边缘设备上运行。",
-      "why_use_it": "它让没有专业服务器的用户也能尝试本地模型，并适合重视离线使用、隐私或低依赖部署的场景。"
-    },
     {
       "api_url": "https://api.github.com/repos/Comfy-Org/ComfyUI",
       "category": "AI 应用",
       "configured_full_name": "Comfy-Org/ComfyUI",
       "description": "The most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface. The fastest local inference engine in the world.",
       "display_name": "ComfyUI",
-      "forks": 17732,
+      "forks": 17756,
       "full_name": "Comfy-Org/ComfyUI",
       "issues": [
         {
@@ -94,8 +40,8 @@
       ],
       "language": "Python",
       "license_name": "GPL-3.0",
-      "open_issues": 5658,
-      "pushed_at": "2026-11-27T02:33:31Z",
+      "open_issues": 5659,
+      "pushed_at": "2026-11-28T03:45:39Z",
       "reason": "节点式生成式图像工作流",
       "release": {
         "name": "v0.46.0",
@@ -106,10 +52,10 @@
       "source_url": "https://github.com/Comfy-Org/ComfyUI",
       "stale": false,
       "stale_reason": null,
-      "star_delta_30d": 4985,
-      "star_delta_7d": 938,
-      "stars": 148790,
-      "trend_score": 82.1,
+      "star_delta_30d": 4939,
+      "star_delta_7d": 959,
+      "stars": 148944,
+      "trend_score": 90.7,
       "use_cases": [
         "设计并保存可重复运行的文生图、图生图流程",
         "组合 LoRA、ControlNet 和各种后处理节点进行创作",
@@ -119,58 +65,58 @@
       "why_use_it": "相比只有提示词输入框的工具，它能把复杂生成过程可视化、保存和复用，适合需要稳定结果与精细控制的创作者和开发者。"
     },
     {
-      "api_url": "https://api.github.com/repos/browser-use/browser-use",
-      "category": "智能体框架",
-      "configured_full_name": "browser-use/browser-use",
-      "description": "Open-source Python library for AI browser agents, plus Browser Use Cloud: stealth browsers and a hosted agent API.",
-      "display_name": "browser-use",
-      "forks": 13667,
-      "full_name": "browser-use/browser-use",
+      "api_url": "https://api.github.com/repos/ggml-org/llama.cpp",
+      "category": "推理引擎",
+      "configured_full_name": "ggml-org/llama.cpp",
+      "description": "LLM inference in C/C++",
+      "display_name": "llama.cpp",
+      "forks": 26193,
+      "full_name": "ggml-org/llama.cpp",
       "issues": [
         {
-          "comments": 20,
-          "number": 4798,
-          "title": "Feature Request: Support agent.pause() within tool calls",
-          "url": "https://github.com/browser-use/browser-use/issues/4798"
+          "comments": 83,
+          "number": 10528,
+          "title": "Misc. bug: Inconsistent Vulkan segfault",
+          "url": "https://github.com/ggml-org/llama.cpp/issues/10528"
         },
         {
-          "comments": 17,
-          "number": 4742,
-          "title": "Bug: Screenshot blob in tool result poisons conversation context → API 400 on all subsequent turns",
-          "url": "https://github.com/browser-use/browser-use/issues/4742"
+          "comments": 58,
+          "number": 10982,
+          "title": "Research: Performance differences between Metal (macOS) and Vulkan (Linux)",
+          "url": "https://github.com/ggml-org/llama.cpp/issues/10982"
         },
         {
-          "comments": 15,
-          "number": 5137,
-          "title": "Proposal: add structured action evidence for no-op and changed browser actions",
-          "url": "https://github.com/browser-use/browser-use/issues/5137"
+          "comments": 56,
+          "number": 14909,
+          "title": "Feature Request: Implement missing ops from backends",
+          "url": "https://github.com/ggml-org/llama.cpp/issues/14909"
         }
       ],
-      "language": "Python",
+      "language": "C++",
       "license_name": "MIT",
-      "open_issues": 588,
-      "pushed_at": "2026-11-27T03:20:23Z",
-      "reason": "浏览器自动化智能体工具",
+      "open_issues": 2667,
+      "pushed_at": "2026-11-28T03:16:30Z",
+      "reason": "本地与边缘设备上的轻量模型推理",
       "release": {
-        "name": "browser-use 1.0.9",
-        "published_at": "2026-11-26T22:45:43Z",
-        "tag_name": "1.0.9",
-        "url": "https://github.com/browser-use/browser-use/releases/tag/1.0.9"
+        "name": "v1.1.0",
+        "published_at": "2026-11-26T09:16:47Z",
+        "tag_name": "v1.1.0",
+        "url": "https://github.com/ggml-org/llama.cpp/releases/tag/v1.1.0"
       },
-      "source_url": "https://github.com/browser-use/browser-use",
+      "source_url": "https://github.com/ggml-org/llama.cpp",
       "stale": false,
       "stale_reason": null,
-      "star_delta_30d": 2761,
-      "star_delta_7d": 547,
-      "stars": 122172,
-      "trend_score": 72.1,
+      "star_delta_30d": 3683,
+      "star_delta_7d": 529,
+      "stars": 136465,
+      "trend_score": 77.1,
       "use_cases": [
-        "自动查找并整理分散在网页中的公开信息",
-        "在授权范围内填写表单或执行重复的后台操作",
-        "测试网页流程以及研究可操作浏览器的智能体"
+        "在电脑上离线运行聊天模型或本地知识库",
+        "把量化模型集成到桌面端、移动端或嵌入式应用",
+        "比较不同量化方式对速度、内存和效果的影响"
       ],
-      "what_it_is": "一个让 AI 智能体读取网页并操作浏览器的工具，使模型能够点击、输入和完成网页中的多步骤任务。",
-      "why_use_it": "很多网站没有可用 API，只能通过界面操作；它为 AI 应用提供浏览器这一执行入口，适合自动化重复但仍需判断的网页流程。"
+      "what_it_is": "一个使用 C/C++ 实现的大模型推理项目，重点支持量化模型以及在个人电脑和边缘设备上运行。",
+      "why_use_it": "它让没有专业服务器的用户也能尝试本地模型，并适合重视离线使用、隐私或低依赖部署的场景。"
     },
     {
       "api_url": "https://api.github.com/repos/ollama/ollama",
@@ -178,7 +124,7 @@
       "configured_full_name": "ollama/ollama",
       "description": "Get up and running with Kimi, GLM, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models.",
       "display_name": "Ollama",
-      "forks": 19223,
+      "forks": 19246,
       "full_name": "ollama/ollama",
       "issues": [
         {
@@ -202,22 +148,22 @@
       ],
       "language": "Go",
       "license_name": "MIT",
-      "open_issues": 4786,
-      "pushed_at": "2026-11-26T19:40:41Z",
+      "open_issues": 4808,
+      "pushed_at": "2026-11-27T21:07:02Z",
       "reason": "本地运行开放模型的常用工具",
       "release": {
-        "name": "v0.40.18",
-        "published_at": "2026-11-24T04:18:13Z",
-        "tag_name": "v0.40.18",
-        "url": "https://github.com/ollama/ollama/releases/tag/v0.40.18"
+        "name": "v0.40.19",
+        "published_at": "2026-11-26T17:52:02Z",
+        "tag_name": "v0.40.19",
+        "url": "https://github.com/ollama/ollama/releases/tag/v0.40.19"
       },
       "source_url": "https://github.com/ollama/ollama",
       "stale": false,
       "stale_reason": null,
-      "star_delta_30d": 3114,
-      "star_delta_7d": 484,
-      "stars": 188260,
-      "trend_score": 68.6,
+      "star_delta_30d": 3077,
+      "star_delta_7d": 539,
+      "stars": 188337,
+      "trend_score": 76.4,
       "use_cases": [
         "在电脑上快速试用不同的开源聊天或嵌入模型",
         "为本地开发的聊天、RAG 和智能体应用提供模型后端",
@@ -227,58 +173,58 @@
       "why_use_it": "它把模型文件、运行参数和服务接口封装起来，降低本地大模型的上手门槛，适合学习、隐私敏感和无需联网的开发环境。"
     },
     {
-      "api_url": "https://api.github.com/repos/open-webui/open-webui",
-      "category": "AI 应用",
-      "configured_full_name": "open-webui/open-webui",
-      "description": "User-friendly AI Interface (Supports Ollama, OpenAI API, ...)",
-      "display_name": "Open WebUI",
-      "forks": 23164,
-      "full_name": "open-webui/open-webui",
+      "api_url": "https://api.github.com/repos/browser-use/browser-use",
+      "category": "智能体框架",
+      "configured_full_name": "browser-use/browser-use",
+      "description": "Open-source Python library for AI browser agents, plus Browser Use Cloud: stealth browsers and a hosted agent API.",
+      "display_name": "browser-use",
+      "forks": 13677,
+      "full_name": "browser-use/browser-use",
       "issues": [
         {
-          "comments": 103,
-          "number": 21675,
-          "title": "enh: analytics",
-          "url": "https://github.com/open-webui/open-webui/issues/21675"
+          "comments": 20,
+          "number": 4798,
+          "title": "Feature Request: Support agent.pause() within tool calls",
+          "url": "https://github.com/browser-use/browser-use/issues/4798"
         },
         {
-          "comments": 46,
-          "number": 13464,
-          "title": "enh: notes",
-          "url": "https://github.com/open-webui/open-webui/issues/13464"
+          "comments": 17,
+          "number": 4742,
+          "title": "Bug: Screenshot blob in tool result poisons conversation context → API 400 on all subsequent turns",
+          "url": "https://github.com/browser-use/browser-use/issues/4742"
         },
         {
-          "comments": 46,
-          "number": 19313,
-          "title": "feat: User specific MCP headers",
-          "url": "https://github.com/open-webui/open-webui/issues/19313"
+          "comments": 15,
+          "number": 5137,
+          "title": "Proposal: add structured action evidence for no-op and changed browser actions",
+          "url": "https://github.com/browser-use/browser-use/issues/5137"
         }
       ],
-      "language": "Svelte",
-      "license_name": "NOASSERTION",
-      "open_issues": 225,
-      "pushed_at": "2026-11-27T00:38:20Z",
-      "reason": "可自托管的通用 AI 交互界面",
+      "language": "Python",
+      "license_name": "MIT",
+      "open_issues": 597,
+      "pushed_at": "2026-11-27T18:42:49Z",
+      "reason": "浏览器自动化智能体工具",
       "release": {
-        "name": "v0.13.5",
-        "published_at": "2026-11-25T09:37:55Z",
-        "tag_name": "v0.13.5",
-        "url": "https://github.com/open-webui/open-webui/releases/tag/v0.13.5"
+        "name": "browser-use 1.0.9",
+        "published_at": "2026-11-26T22:45:43Z",
+        "tag_name": "1.0.9",
+        "url": "https://github.com/browser-use/browser-use/releases/tag/1.0.9"
       },
-      "source_url": "https://github.com/open-webui/open-webui",
+      "source_url": "https://github.com/browser-use/browser-use",
       "stale": false,
       "stale_reason": null,
-      "star_delta_30d": 2567,
-      "star_delta_7d": 471,
-      "stars": 159653,
-      "trend_score": 61.4,
+      "star_delta_30d": 2742,
+      "star_delta_7d": 560,
+      "stars": 122244,
+      "trend_score": 69.3,
       "use_cases": [
-        "为本地模型搭建类似常见聊天产品的操作界面",
-        "建立团队内部的多模型访问入口",
-        "体验模型对话、知识库和常用 AI 工具功能"
+        "自动查找并整理分散在网页中的公开信息",
+        "在授权范围内填写表单或执行重复的后台操作",
+        "测试网页流程以及研究可操作浏览器的智能体"
       ],
-      "what_it_is": "一个可自行部署的 AI 对话界面，能够连接 Ollama 和兼容常见接口的模型服务。",
-      "why_use_it": "它省去了从零开发聊天前端的工作，让个人或团队更快获得统一的模型入口，并能把界面和数据放在自己控制的环境中。"
+      "what_it_is": "一个让 AI 智能体读取网页并操作浏览器的工具，使模型能够点击、输入和完成网页中的多步骤任务。",
+      "why_use_it": "很多网站没有可用 API，只能通过界面操作；它为 AI 应用提供浏览器这一执行入口，适合自动化重复但仍需判断的网页流程。"
     },
     {
       "api_url": "https://api.github.com/repos/vllm-project/vllm",
@@ -286,7 +232,7 @@
       "configured_full_name": "vllm-project/vllm",
       "description": "A high-throughput and memory-efficient inference and serving engine for LLMs",
       "display_name": "vLLM",
-      "forks": 25349,
+      "forks": 25393,
       "full_name": "vllm-project/vllm",
       "issues": [
         {
@@ -310,8 +256,8 @@
       ],
       "language": "Python",
       "license_name": "Apache-2.0",
-      "open_issues": 11191,
-      "pushed_at": "2026-11-27T04:12:08Z",
+      "open_issues": 11240,
+      "pushed_at": "2026-11-28T03:38:58Z",
       "reason": "高吞吐大模型推理与服务",
       "release": {
         "name": "v0.34.0",
@@ -322,10 +268,10 @@
       "source_url": "https://github.com/vllm-project/vllm",
       "stale": false,
       "stale_reason": null,
-      "star_delta_30d": 1867,
-      "star_delta_7d": 369,
-      "stars": 97659,
-      "trend_score": 58.6,
+      "star_delta_30d": 1849,
+      "star_delta_7d": 399,
+      "stars": 97718,
+      "trend_score": 62.9,
       "use_cases": [
         "搭建兼容常见调用方式的大模型 API 服务",
         "为聊天机器人、智能体和 RAG 应用提供共享推理后端",
@@ -340,7 +286,7 @@
       "configured_full_name": "langgenius/dify",
       "description": "Build Agentic workflows, RAG pipelines, with rich AI model and tool support on one collaborative workspace. Deploy on cloud, VPC, or self-hosted, so teams move from prototype to production without rebuilding the stack.",
       "display_name": "Dify",
-      "forks": 25560,
+      "forks": 25567,
       "full_name": "langgenius/dify",
       "issues": [
         {
@@ -350,22 +296,22 @@
           "url": "https://github.com/langgenius/dify/issues/33092"
         },
         {
+          "comments": 19,
+          "number": 45584,
+          "title": "[Chore/Refactor] use sqlalchemy engine",
+          "url": "https://github.com/langgenius/dify/issues/45584"
+        },
+        {
           "comments": 18,
           "number": 30269,
           "title": "the roadmap for adapt to modern tech for backend",
           "url": "https://github.com/langgenius/dify/issues/30269"
-        },
-        {
-          "comments": 16,
-          "number": 45584,
-          "title": "[Chore/Refactor] use sqlalchemy engine",
-          "url": "https://github.com/langgenius/dify/issues/45584"
         }
       ],
       "language": "Python",
       "license_name": "NOASSERTION",
-      "open_issues": 1312,
-      "pushed_at": "2026-11-27T04:16:07Z",
+      "open_issues": 1325,
+      "pushed_at": "2026-11-28T03:57:11Z",
       "reason": "可视化智能体工作流与 RAG 平台",
       "release": {
         "name": "v1.20.0",
@@ -376,10 +322,10 @@
       "source_url": "https://github.com/langgenius/dify",
       "stale": false,
       "stale_reason": null,
-      "star_delta_30d": 2123,
-      "star_delta_7d": 385,
-      "stars": 161973,
-      "trend_score": 58.6,
+      "star_delta_30d": 2097,
+      "star_delta_7d": 399,
+      "stars": 162031,
+      "trend_score": 61.4,
       "use_cases": [
         "制作客服、知识库问答和内部业务助手",
         "用可视化节点编排带判断与工具调用的 AI 工作流",
@@ -389,12 +335,66 @@
       "why_use_it": "它让开发者和产品人员用较少代码搭建完整 AI 应用，并把提示词、数据、流程和运行记录放在同一处管理。"
     },
     {
+      "api_url": "https://api.github.com/repos/open-webui/open-webui",
+      "category": "AI 应用",
+      "configured_full_name": "open-webui/open-webui",
+      "description": "User-friendly AI Interface (Supports Ollama, OpenAI API, ...)",
+      "display_name": "Open WebUI",
+      "forks": 23171,
+      "full_name": "open-webui/open-webui",
+      "issues": [
+        {
+          "comments": 103,
+          "number": 21675,
+          "title": "enh: analytics",
+          "url": "https://github.com/open-webui/open-webui/issues/21675"
+        },
+        {
+          "comments": 46,
+          "number": 13464,
+          "title": "enh: notes",
+          "url": "https://github.com/open-webui/open-webui/issues/13464"
+        },
+        {
+          "comments": 46,
+          "number": 19313,
+          "title": "feat: User specific MCP headers",
+          "url": "https://github.com/open-webui/open-webui/issues/19313"
+        }
+      ],
+      "language": "Svelte",
+      "license_name": "NOASSERTION",
+      "open_issues": 235,
+      "pushed_at": "2026-11-27T16:00:01Z",
+      "reason": "可自托管的通用 AI 交互界面",
+      "release": {
+        "name": "v0.13.5",
+        "published_at": "2026-11-25T09:37:55Z",
+        "tag_name": "v0.13.5",
+        "url": "https://github.com/open-webui/open-webui/releases/tag/v0.13.5"
+      },
+      "source_url": "https://github.com/open-webui/open-webui",
+      "stale": false,
+      "stale_reason": null,
+      "star_delta_30d": 2514,
+      "star_delta_7d": 471,
+      "stars": 159700,
+      "trend_score": 57.9,
+      "use_cases": [
+        "为本地模型搭建类似常见聊天产品的操作界面",
+        "建立团队内部的多模型访问入口",
+        "体验模型对话、知识库和常用 AI 工具功能"
+      ],
+      "what_it_is": "一个可自行部署的 AI 对话界面，能够连接 Ollama 和兼容常见接口的模型服务。",
+      "why_use_it": "它省去了从零开发聊天前端的工作，让个人或团队更快获得统一的模型入口，并能把界面和数据放在自己控制的环境中。"
+    },
+    {
       "api_url": "https://api.github.com/repos/lobehub/lobehub",
       "category": "AI 应用",
       "configured_full_name": "lobehub/lobehub",
       "description": "🤯 LobeHub - Super-Agents on Your Team. Add super-agents to the chats your team already uses.They take on work by themselves and get better every week.",
       "display_name": "LobeHub",
-      "forks": 16369,
+      "forks": 16364,
       "full_name": "lobehub/lobehub",
       "issues": [
         {
@@ -418,8 +418,8 @@
       ],
       "language": "TypeScript",
       "license_name": "NOASSERTION",
-      "open_issues": 1348,
-      "pushed_at": "2026-11-27T04:18:44Z",
+      "open_issues": 1370,
+      "pushed_at": "2026-11-28T03:35:13Z",
       "reason": "智能体组织、运行与交互平台",
       "release": {
         "name": "🚀 Release v2.3.6",
@@ -430,10 +430,10 @@
       "source_url": "https://github.com/lobehub/lobehub",
       "stale": false,
       "stale_reason": null,
-      "star_delta_30d": 2621,
-      "star_delta_7d": 259,
-      "stars": 86189,
-      "trend_score": 57.9,
+      "star_delta_30d": 2620,
+      "star_delta_7d": 255,
+      "stars": 86210,
+      "trend_score": 54.3,
       "use_cases": [
         "创建分别负责写作、学习、编程等任务的个人助手",
         "统一使用和比较不同模型服务",
@@ -443,174 +443,12 @@
       "why_use_it": "它更接近可直接使用的 AI 工作台，而不是底层开发框架，适合希望集中管理模型、助手和日常任务的个人或团队。"
     },
     {
-      "api_url": "https://api.github.com/repos/tensorflow/tensorflow",
-      "category": "模型框架",
-      "configured_full_name": "tensorflow/tensorflow",
-      "description": "An Open Source Machine Learning Framework for Everyone",
-      "display_name": "TensorFlow",
-      "forks": 77377,
-      "full_name": "tensorflow/tensorflow",
-      "issues": [
-        {
-          "comments": 113,
-          "number": 89272,
-          "title": "TensorFlow on RTX 5090",
-          "url": "https://github.com/tensorflow/tensorflow/issues/89272"
-        },
-        {
-          "comments": 61,
-          "number": 91656,
-          "title": "TensorFlow DLL failed to load with newer version of TF",
-          "url": "https://github.com/tensorflow/tensorflow/issues/91656"
-        },
-        {
-          "comments": 60,
-          "number": 33131,
-          "title": "how to assign value to a EagerTensor slice? ----'tensorflow.python.framework.ops.EagerTensor' object does not support item assignment",
-          "url": "https://github.com/tensorflow/tensorflow/issues/33131"
-        }
-      ],
-      "language": "C++",
-      "license_name": "Apache-2.0",
-      "open_issues": 3399,
-      "pushed_at": "2026-11-27T04:04:52Z",
-      "reason": "成熟的机器学习与部署框架",
-      "release": {
-        "name": "TensorFlow 2.21.0",
-        "published_at": "2026-03-06T19:48:15Z",
-        "tag_name": "v2.21.0",
-        "url": "https://github.com/tensorflow/tensorflow/releases/tag/v2.21.0"
-      },
-      "source_url": "https://github.com/tensorflow/tensorflow",
-      "stale": false,
-      "stale_reason": null,
-      "star_delta_30d": 580,
-      "star_delta_7d": 202,
-      "stars": 201866,
-      "trend_score": 41.4,
-      "use_cases": [
-        "使用 Keras 训练分类、预测和推荐模型",
-        "将模型部署到移动端、边缘设备或生产服务",
-        "维护企业中已有的 TensorFlow 机器学习系统"
-      ],
-      "what_it_is": "一套覆盖模型开发、训练和部署的机器学习平台，常与 Keras、TensorFlow Lite 等工具配合使用。",
-      "why_use_it": "它的工程化与部署工具成熟，尤其适合已有 TensorFlow 技术栈，或需要把模型部署到服务器、浏览器和移动设备的团队。"
-    },
-    {
-      "api_url": "https://api.github.com/repos/pytorch/pytorch",
-      "category": "模型框架",
-      "configured_full_name": "pytorch/pytorch",
-      "description": "Tensors and Dynamic neural networks in Python with strong GPU acceleration",
-      "display_name": "PyTorch",
-      "forks": 30677,
-      "full_name": "pytorch/pytorch",
-      "issues": [
-        {
-          "comments": 1797,
-          "number": 77764,
-          "title": "General MPS op coverage tracking issue",
-          "url": "https://github.com/pytorch/pytorch/issues/77764"
-        },
-        {
-          "comments": 1296,
-          "number": 93531,
-          "title": "TorchInductor CPU Performance Dashboard",
-          "url": "https://github.com/pytorch/pytorch/issues/93531"
-        },
-        {
-          "comments": 270,
-          "number": 141287,
-          "title": "MPS operator coverage tracking issue (2.6+ version)",
-          "url": "https://github.com/pytorch/pytorch/issues/141287"
-        }
-      ],
-      "language": "Python",
-      "license_name": "NOASSERTION",
-      "open_issues": 18655,
-      "pushed_at": "2026-11-27T04:18:49Z",
-      "reason": "广泛使用的深度学习框架",
-      "release": {
-        "name": "PyTorch 2.15.0 Release",
-        "published_at": "2026-10-28T17:09:49Z",
-        "tag_name": "v2.15.0",
-        "url": "https://github.com/pytorch/pytorch/releases/tag/v2.15.0"
-      },
-      "source_url": "https://github.com/pytorch/pytorch",
-      "stale": false,
-      "stale_reason": null,
-      "star_delta_30d": 637,
-      "star_delta_7d": 37,
-      "stars": 105794,
-      "trend_score": 39.3,
-      "use_cases": [
-        "从头训练神经网络或微调已有模型",
-        "实现论文中的新模型、损失函数和训练方法",
-        "构建需要 GPU 加速的视觉、语音或自然语言任务"
-      ],
-      "what_it_is": "一个以 Python 为主要接口的深度学习框架，提供张量计算、自动求导、GPU 加速和神经网络组件。",
-      "why_use_it": "它代码直观、调试方便，研究社区和开源模型采用广泛；当现成 AI 工具不够用时，它让开发者能够训练或修改模型本身。"
-    },
-    {
-      "api_url": "https://api.github.com/repos/huggingface/transformers",
-      "category": "模型框架",
-      "configured_full_name": "huggingface/transformers",
-      "description": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training. ",
-      "display_name": "Transformers",
-      "forks": 35317,
-      "full_name": "huggingface/transformers",
-      "issues": [
-        {
-          "comments": 54,
-          "number": 33260,
-          "title": "Community contribution: Adding GGUF support for more architectures",
-          "url": "https://github.com/huggingface/transformers/issues/33260"
-        },
-        {
-          "comments": 47,
-          "number": 7675,
-          "title": "Add FAVOR+ / Performer attention",
-          "url": "https://github.com/huggingface/transformers/issues/7675"
-        },
-        {
-          "comments": 35,
-          "number": 21079,
-          "title": "TokenGT",
-          "url": "https://github.com/huggingface/transformers/issues/21079"
-        }
-      ],
-      "language": "Python",
-      "license_name": "Apache-2.0",
-      "open_issues": 1184,
-      "pushed_at": "2026-11-27T01:33:37Z",
-      "reason": "主流多模态模型定义与推理生态",
-      "release": {
-        "name": "Patch release v5.24.1",
-        "published_at": "2026-11-24T16:13:08Z",
-        "tag_name": "v5.24.1",
-        "url": "https://github.com/huggingface/transformers/releases/tag/v5.24.1"
-      },
-      "source_url": "https://github.com/huggingface/transformers",
-      "stale": false,
-      "stale_reason": null,
-      "star_delta_30d": 1071,
-      "star_delta_7d": 51,
-      "stars": 169383,
-      "trend_score": 35.7,
-      "use_cases": [
-        "加载开源大模型制作聊天、分类、翻译或信息抽取应用",
-        "用自己的数据微调文本、视觉或多模态模型",
-        "快速比较不同模型，并把模型接入现有 Python 服务"
-      ],
-      "what_it_is": "一个统一使用文本、图像、音频和多模态预训练模型的 Python 工具库，覆盖模型加载、训练与推理。",
-      "why_use_it": "它把不同模型的接口尽量统一，并连接 Hugging Face 模型生态，适合不想从论文和底层代码重新实现模型的应用开发者。"
-    },
-    {
       "api_url": "https://api.github.com/repos/langchain-ai/langchain",
       "category": "智能体框架",
       "configured_full_name": "langchain-ai/langchain",
       "description": "The agent engineering platform.",
       "display_name": "LangChain",
-      "forks": 25176,
+      "forks": 25185,
       "full_name": "langchain-ai/langchain",
       "issues": [
         {
@@ -634,8 +472,8 @@
       ],
       "language": "Python",
       "license_name": "MIT",
-      "open_issues": 783,
-      "pushed_at": "2026-11-26T10:36:59Z",
+      "open_issues": 787,
+      "pushed_at": "2026-11-28T02:14:10Z",
       "reason": "智能体与大模型应用编排平台",
       "release": {
         "name": "langchain-core==1.8.5",
@@ -646,10 +484,10 @@
       "source_url": "https://github.com/langchain-ai/langchain",
       "stale": false,
       "stale_reason": null,
-      "star_delta_30d": 1405,
-      "star_delta_7d": 63,
-      "stars": 150048,
-      "trend_score": 35.0,
+      "star_delta_30d": 1408,
+      "star_delta_7d": 131,
+      "stars": 150088,
+      "trend_score": 47.1,
       "use_cases": [
         "构建能够调用搜索、数据库或业务接口的智能体",
         "编排问答、提取、审核等多步骤大模型工作流",
@@ -659,12 +497,174 @@
       "why_use_it": "它提供大量模型与外部工具的连接器，适合快速验证包含多个步骤的 AI 应用，并减少为每个供应商重复编写集成代码。"
     },
     {
+      "api_url": "https://api.github.com/repos/pytorch/pytorch",
+      "category": "模型框架",
+      "configured_full_name": "pytorch/pytorch",
+      "description": "Tensors and Dynamic neural networks in Python with strong GPU acceleration",
+      "display_name": "PyTorch",
+      "forks": 30642,
+      "full_name": "pytorch/pytorch",
+      "issues": [
+        {
+          "comments": 1797,
+          "number": 77764,
+          "title": "General MPS op coverage tracking issue",
+          "url": "https://github.com/pytorch/pytorch/issues/77764"
+        },
+        {
+          "comments": 1296,
+          "number": 93531,
+          "title": "TorchInductor CPU Performance Dashboard",
+          "url": "https://github.com/pytorch/pytorch/issues/93531"
+        },
+        {
+          "comments": 270,
+          "number": 141287,
+          "title": "MPS operator coverage tracking issue (2.6+ version)",
+          "url": "https://github.com/pytorch/pytorch/issues/141287"
+        }
+      ],
+      "language": "Python",
+      "license_name": "NOASSERTION",
+      "open_issues": 18697,
+      "pushed_at": "2026-11-28T03:36:32Z",
+      "reason": "广泛使用的深度学习框架",
+      "release": {
+        "name": "PyTorch 2.15.0 Release",
+        "published_at": "2026-10-28T17:09:49Z",
+        "tag_name": "v2.15.0",
+        "url": "https://github.com/pytorch/pytorch/releases/tag/v2.15.0"
+      },
+      "source_url": "https://github.com/pytorch/pytorch",
+      "stale": false,
+      "stale_reason": null,
+      "star_delta_30d": 694,
+      "star_delta_7d": -38,
+      "stars": 105695,
+      "trend_score": 33.6,
+      "use_cases": [
+        "从头训练神经网络或微调已有模型",
+        "实现论文中的新模型、损失函数和训练方法",
+        "构建需要 GPU 加速的视觉、语音或自然语言任务"
+      ],
+      "what_it_is": "一个以 Python 为主要接口的深度学习框架，提供张量计算、自动求导、GPU 加速和神经网络组件。",
+      "why_use_it": "它代码直观、调试方便，研究社区和开源模型采用广泛；当现成 AI 工具不够用时，它让开发者能够训练或修改模型本身。"
+    },
+    {
+      "api_url": "https://api.github.com/repos/tensorflow/tensorflow",
+      "category": "模型框架",
+      "configured_full_name": "tensorflow/tensorflow",
+      "description": "An Open Source Machine Learning Framework for Everyone",
+      "display_name": "TensorFlow",
+      "forks": 77331,
+      "full_name": "tensorflow/tensorflow",
+      "issues": [
+        {
+          "comments": 113,
+          "number": 89272,
+          "title": "TensorFlow on RTX 5090",
+          "url": "https://github.com/tensorflow/tensorflow/issues/89272"
+        },
+        {
+          "comments": 61,
+          "number": 91656,
+          "title": "TensorFlow DLL failed to load with newer version of TF",
+          "url": "https://github.com/tensorflow/tensorflow/issues/91656"
+        },
+        {
+          "comments": 60,
+          "number": 33131,
+          "title": "how to assign value to a EagerTensor slice? ----'tensorflow.python.framework.ops.EagerTensor' object does not support item assignment",
+          "url": "https://github.com/tensorflow/tensorflow/issues/33131"
+        }
+      ],
+      "language": "C++",
+      "license_name": "Apache-2.0",
+      "open_issues": 3391,
+      "pushed_at": "2026-11-28T02:51:30Z",
+      "reason": "成熟的机器学习与部署框架",
+      "release": {
+        "name": "TensorFlow 2.21.0",
+        "published_at": "2026-03-06T19:48:15Z",
+        "tag_name": "v2.21.0",
+        "url": "https://github.com/tensorflow/tensorflow/releases/tag/v2.21.0"
+      },
+      "source_url": "https://github.com/tensorflow/tensorflow",
+      "stale": false,
+      "stale_reason": null,
+      "star_delta_30d": 518,
+      "star_delta_7d": 52,
+      "stars": 201729,
+      "trend_score": 31.4,
+      "use_cases": [
+        "使用 Keras 训练分类、预测和推荐模型",
+        "将模型部署到移动端、边缘设备或生产服务",
+        "维护企业中已有的 TensorFlow 机器学习系统"
+      ],
+      "what_it_is": "一套覆盖模型开发、训练和部署的机器学习平台，常与 Keras、TensorFlow Lite 等工具配合使用。",
+      "why_use_it": "它的工程化与部署工具成熟，尤其适合已有 TensorFlow 技术栈，或需要把模型部署到服务器、浏览器和移动设备的团队。"
+    },
+    {
+      "api_url": "https://api.github.com/repos/huggingface/transformers",
+      "category": "模型框架",
+      "configured_full_name": "huggingface/transformers",
+      "description": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training. ",
+      "display_name": "Transformers",
+      "forks": 35326,
+      "full_name": "huggingface/transformers",
+      "issues": [
+        {
+          "comments": 54,
+          "number": 33260,
+          "title": "Community contribution: Adding GGUF support for more architectures",
+          "url": "https://github.com/huggingface/transformers/issues/33260"
+        },
+        {
+          "comments": 47,
+          "number": 7675,
+          "title": "Add FAVOR+ / Performer attention",
+          "url": "https://github.com/huggingface/transformers/issues/7675"
+        },
+        {
+          "comments": 35,
+          "number": 21079,
+          "title": "TokenGT",
+          "url": "https://github.com/huggingface/transformers/issues/21079"
+        }
+      ],
+      "language": "Python",
+      "license_name": "Apache-2.0",
+      "open_issues": 1191,
+      "pushed_at": "2026-11-27T23:34:32Z",
+      "reason": "主流多模态模型定义与推理生态",
+      "release": {
+        "name": "Patch release v5.24.1",
+        "published_at": "2026-11-24T16:13:08Z",
+        "tag_name": "v5.24.1",
+        "url": "https://github.com/huggingface/transformers/releases/tag/v5.24.1"
+      },
+      "source_url": "https://github.com/huggingface/transformers",
+      "stale": false,
+      "stale_reason": null,
+      "star_delta_30d": 980,
+      "star_delta_7d": -2,
+      "stars": 169311,
+      "trend_score": 29.3,
+      "use_cases": [
+        "加载开源大模型制作聊天、分类、翻译或信息抽取应用",
+        "用自己的数据微调文本、视觉或多模态模型",
+        "快速比较不同模型，并把模型接入现有 Python 服务"
+      ],
+      "what_it_is": "一个统一使用文本、图像、音频和多模态预训练模型的 Python 工具库，覆盖模型加载、训练与推理。",
+      "why_use_it": "它把不同模型的接口尽量统一，并连接 Hugging Face 模型生态，适合不想从论文和底层代码重新实现模型的应用开发者。"
+    },
+    {
       "api_url": "https://api.github.com/repos/huggingface/smolagents",
       "category": "智能体框架",
       "configured_full_name": "huggingface/smolagents",
       "description": "🤗 smolagents: a barebones library for agents that think in code.",
       "display_name": "smolagents",
-      "forks": 3255,
+      "forks": 3262,
       "full_name": "huggingface/smolagents",
       "issues": [
         {
@@ -688,7 +688,7 @@
       ],
       "language": "Python",
       "license_name": "Apache-2.0",
-      "open_issues": 585,
+      "open_issues": 594,
       "pushed_at": "2026-11-26T08:05:29Z",
       "reason": "轻量代码型智能体库",
       "release": {
@@ -700,9 +700,9 @@
       "source_url": "https://github.com/huggingface/smolagents",
       "stale": false,
       "stale_reason": null,
-      "star_delta_30d": 431,
-      "star_delta_7d": 98,
-      "stars": 30559,
+      "star_delta_30d": 435,
+      "star_delta_7d": 103,
+      "stars": 30574,
       "trend_score": 22.1,
       "use_cases": [
         "快速制作能够调用 Python 函数或外部工具的智能体",
@@ -718,7 +718,7 @@
       "configured_full_name": "run-llama/llama_index",
       "description": "LlamaIndex is the document processing platform for AI",
       "display_name": "LlamaIndex",
-      "forks": 8650,
+      "forks": 8659,
       "full_name": "run-llama/llama_index",
       "issues": [
         {
@@ -742,7 +742,7 @@
       ],
       "language": "Python",
       "license_name": "MIT",
-      "open_issues": 1600,
+      "open_issues": 1616,
       "pushed_at": "2026-11-26T17:46:19Z",
       "reason": "面向数据与文档的大模型应用框架",
       "release": {
@@ -754,10 +754,10 @@
       "source_url": "https://github.com/run-llama/llama_index",
       "stale": false,
       "stale_reason": null,
-      "star_delta_30d": 304,
-      "star_delta_7d": 50,
-      "stars": 53021,
-      "trend_score": 15.7,
+      "star_delta_30d": 294,
+      "star_delta_7d": 57,
+      "stars": 53030,
+      "trend_score": 20.0,
       "use_cases": [
         "制作面向课程资料、公司文档或个人笔记的知识库问答",
         "构建 RAG 检索流程和带引用来源的助手",
@@ -772,7 +772,7 @@
       "configured_full_name": "microsoft/autogen",
       "description": "A programming framework for agentic AI",
       "display_name": "AutoGen",
-      "forks": 9424,
+      "forks": 9427,
       "full_name": "microsoft/autogen",
       "issues": [
         {
@@ -808,10 +808,10 @@
       "source_url": "https://github.com/microsoft/autogen",
       "stale": false,
       "stale_reason": null,
-      "star_delta_30d": 356,
-      "star_delta_7d": 15,
-      "stars": 61970,
-      "trend_score": 10.7,
+      "star_delta_30d": 344,
+      "star_delta_7d": 10,
+      "stars": 61966,
+      "trend_score": 16.4,
       "use_cases": [
         "组合规划者、执行者和审查者完成复杂任务",
         "构建带人工确认环节的多智能体工作流",
@@ -822,7 +822,7 @@
     }
   ],
   "schema_version": 1,
-  "snapshot_days": 64,
+  "snapshot_days": 65,
   "status": "ready",
   "weekly_report": {
     "path": "reports/2026-W48.md",
